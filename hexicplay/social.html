@@ -82,24 +82,29 @@ table.exec th { font-size:12.5px; }
 .ap-block { min-width:0; }
 .ap-h { font-size:13px; font-weight:600; color:#0a2540; margin-bottom:6px; }
 .ap-axis { display:flex; justify-content:space-between; font-size:11.5px; color:#9aa5b1; margin-top:2px; }
-.sp-tabs { position:sticky; top:0; z-index:9; background:rgba(246,248,251,.94); backdrop-filter:blur(6px); padding:10px 0 8px; margin-bottom:4px; }
+.sp-tabs { position:sticky; top:0; z-index:9; background:rgba(246,248,251,.94); backdrop-filter:blur(6px); padding:10px 0 8px; margin-bottom:4px; display:flex; flex-wrap:wrap; align-items:center; gap:6px; }
+.tab-hint { font-size:12.5px; color:#8792a2; margin-right:6px; }
+.plat-tabs { display:flex; flex-wrap:wrap; gap:6px; margin:2px 0 12px; }
+.plat-tabs .gtab { font-size:12.5px; padding:5px 13px; }
+.scope-note { font-size:12.5px; line-height:1.7; color:#3b5378; background:#f5f8fc; border:1px solid #e3e8ef; border-left:3px solid #0a2540; border-radius:8px; padding:8px 12px; margin:0 0 12px; }
 </style></head><body>
 <div class="wrap">
   <div class="hero">
     <span class="badge">2026年11月 · 海外社媒运营报告</span>
     <h1>和禧潮 HexiChao · Social Media</h1>
-    <div class="sub">https://hexicplay.com · 生成于 2026/11/9 16:50:37</div>
+    <div class="sub">https://hexicplay.com · 生成于 2026/11/9 16:55:22</div>
   </div>
 
-  <div class="sp-tabs ga-tabs"><button class="gtab" onclick="spTab(this,'sp-2026-08')">8 月</button><button class="gtab" onclick="spTab(this,'sp-2026-09')">9 月</button><button class="gtab active" onclick="spTab(this,'sp-2026-10')">10 月</button><button class="gtab" onclick="spTab(this,'sp-d90')">近90天</button><button class="gtab" onclick="spTab(this,'sp-ytd')">全年</button></div>
-
-  <div class="ga-pane" id="sp-2026-08" style="display:none">
   <section>
     <div class="chap"><span class="chapnum">INFO</span><h2 style="margin:0">报表基础信息</h2></div>
     <table class="kv">
-      <tr><th>报表周期</th><td>2026 年 8 月 12 日 — 2026 年 9 月 7 日（近 28 天）</td></tr><tr><th>运营账号</th><td>Facebook 个人主页 / Facebook 公共主页 / TikTok / Instagram / YouTube</td></tr><tr><th>统计工具</th><td>Meta Insights、TikTok Analytics、IG Insights、YouTube Analytics</td></tr><tr><th>数据报告人</th><td>佩琪</td></tr><tr><th>报表用途</th><td>社媒账号月度数据复盘 · 内容效能评估 · 流量归因 · 下月策略制定</td></tr>
+      <tr><th>报表周期</th><td>2026 年 10 月 1 日 — 2026 年 10 月 30 日</td></tr><tr><th>运营账号</th><td>Facebook 个人主页 / Facebook 公共主页 / TikTok / Instagram / YouTube</td></tr><tr><th>统计工具</th><td>Meta Insights、TikTok Analytics、IG Insights、YouTube Analytics</td></tr><tr><th>数据报告人</th><td>佩琪</td></tr><tr><th>报表用途</th><td>社媒账号月度数据复盘 · 内容效能评估 · 流量归因 · 下月策略制定</td></tr>
     </table>
   </section>
+
+  <div class="sp-tabs ga-tabs"><span class="tab-hint">统计期间</span><button class="gtab" onclick="spTab(this,'sp-2026-08')">8 月</button><button class="gtab" onclick="spTab(this,'sp-2026-09')">9 月</button><button class="gtab active" onclick="spTab(this,'sp-2026-10')">10 月</button><button class="gtab" onclick="spTab(this,'sp-d90')">近90天</button><button class="gtab" onclick="spTab(this,'sp-ytd')">全年</button></div>
+
+  <div class="ga-pane" id="sp-2026-08" style="display:none">
   <div class="cards">
     <div class="card"><div class="label">覆盖平台</div><div class="value">4<small> 个</small></div><div class="hint">Facebook / Instagram / TikTok / YouTube</div></div><div class="card"><div class="label">运营账号</div><div class="value">5<small> 个</small></div><div class="hint">多账号矩阵协同运营</div></div><div class="card"><div class="label">主页浏览量</div><div class="value">13,745<small> 次</small></div><div class="hint">Meta 双主页近 28 天合计</div></div><div class="card"><div class="label">互动量</div><div class="value">302<small> 次</small></div><div class="hint">点赞 · 评论 · 收藏 · 分享</div></div><div class="card"><div class="label">在发内容</div><div class="value">41<small> 条</small></div><div class="hint">Reels / 短视频滚动窗口</div></div><div class="card"><div class="label">内容总播放</div><div class="value">9,682<small> 次</small></div><div class="hint">四平台内容播放合计</div></div>
   </div>
@@ -118,7 +123,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：曝光触达 · 互动表现 · 覆盖人群 · 流量来源 · 内容效能</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">8 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
@@ -133,16 +142,50 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">0 条 / 0 播放</td>
     </tr>
-    </table>
-    
-    
-    <div class="cnt-wrap">
+    </table><div class="cnt-wrap">
       <div class="cnt-head"><strong>He Xi Chao</strong>
         <span>Reels播放明细（8 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,302 · 均值 288 · 峰值 497</span>
       </div>
       <div class="cnt-list"><span class="cnt">238</span><span class="cnt">284</span><span class="cnt">152</span><span class="cnt">205</span><span class="cnt">193</span><span class="cnt">242</span><span class="cnt">497</span><span class="cnt">491</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 33,118 · 互动 751 · 新增关注 39 · 内容 24 条 / 播放 7,591
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
+      <td class="r">20,313</td>
+      <td class="r">476</td>
+      <td class="r">36</td>
+      <td class="r">16 条 / 4,815 播放</td>
+    </tr><tr>
+      <td><strong>Hexichao-Plastic</strong><div style="color:#8792a2;font-size:12px">商业主页</div></td>
+      <td class="r">12,805</td>
+      <td class="r">275</td>
+      <td class="r">3</td>
+      <td class="r">8 条 / 2,776 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 60,435 · 互动 1,425 · 新增关注 64 · 内容 42 条 / 播放 12,976
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
+      <td class="r">35,385</td>
+      <td class="r">820</td>
+      <td class="r">61</td>
+      <td class="r">25 条 / 7,671 播放</td>
+    </tr><tr>
+      <td><strong>Hexichao-Plastic</strong><div style="color:#8792a2;font-size:12px">商业主页</div></td>
+      <td class="r">25,050</td>
+      <td class="r">605</td>
+      <td class="r">3</td>
+      <td class="r">17 条 / 5,305 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#e1306c">IG</span>
@@ -151,7 +194,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：Reels 播放 · 主页访问 · 互动率 · 触达人数 · 粉丝画像</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">8 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HexiChao</strong></td>
@@ -160,16 +207,56 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">12 条 / 2,879 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">IG 面板为 60 天口径（7 月 9 日 — 9 月 6 日）</span><span class="extra">浏览人数 1,041</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">IG 面板为 60 天口径（7 月 9 日 — 9 月 6 日）</span><span class="extra">浏览人数 1,041</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HexiChao</strong>
         <span>Reels播放明细（12 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,879 · 均值 240 · 峰值 536</span>
       </div>
       <div class="cnt-list"><span class="cnt">73</span><span class="cnt">141</span><span class="cnt">114</span><span class="cnt">79</span><span class="cnt">115</span><span class="cnt">244</span><span class="cnt">504</span><span class="cnt">290</span><span class="cnt">205</span><span class="cnt">287</span><span class="cnt">291</span><span class="cnt">536</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 9,366 · 互动 33 · 新增关注 0 · 内容 21 条 / 播放 5,757
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HexiChao</strong></td>
+      <td class="r">3,430</td>
+      <td class="r">29</td>
+      <td class="r">—</td>
+      <td class="r">12 条 / 2,879 播放</td>
+    </tr><tr>
+      <td><strong>hexichao_plastic</strong></td>
+      <td class="r">5,936</td>
+      <td class="r">4</td>
+      <td class="r">—</td>
+      <td class="r">9 条 / 2,878 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 9,366 · 互动 33 · 新增关注 0 · 内容 39 条 / 播放 11,686
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HexiChao</strong></td>
+      <td class="r">3,430</td>
+      <td class="r">29</td>
+      <td class="r">—</td>
+      <td class="r">12 条 / 2,879 播放</td>
+    </tr><tr>
+      <td><strong>hexichao_plastic</strong></td>
+      <td class="r">5,936</td>
+      <td class="r">4</td>
+      <td class="r">—</td>
+      <td class="r">9 条 / 2,878 播放</td>
+    </tr><tr>
+      <td><strong>HexiChao（账号主页未入镜，以内容页为准）</strong></td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">18 条 / 5,929 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#111827">TT</span>
@@ -178,7 +265,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：播放量 · 完播率 · 平均观看时长 · 粉丝增量 · 流量来源结构</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">8 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao</strong></td>
@@ -187,16 +278,38 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">12 条 / 1,243 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">赞 86（+138.9%）· 评论 1 · 主页访问 8（+60%）</span><span class="extra">统计窗口 8 月 9 日 — 9 月 5 日（28 天）</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">赞 86（+138.9%）· 评论 1 · 主页访问 8（+60%）</span><span class="extra">统计窗口 8 月 9 日 — 9 月 5 日（28 天）</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao</strong>
         <span>视频播放明细（12 条，由新到旧）</span>
         <span class="cnt-sum">合计 1,243 · 均值 104 · 峰值 129</span>
       </div>
       <div class="cnt-list"><span class="cnt">94</span><span class="cnt">106</span><span class="cnt">98</span><span class="cnt">128</span><span class="cnt">129</span><span class="cnt">99</span><span class="cnt">77</span><span class="cnt">108</span><span class="cnt">97</span><span class="cnt">105</span><span class="cnt">103</span><span class="cnt">99</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 4,200 · 互动 119 · 新增关注 0 · 内容 24 条 / 播放 2,467
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao</strong></td>
+      <td class="r">4,200</td>
+      <td class="r">119</td>
+      <td class="r">—</td>
+      <td class="r">24 条 / 2,467 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 4,200 · 互动 119 · 新增关注 0 · 内容 39 条 / 播放 4,296
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao</strong></td>
+      <td class="r">4,200</td>
+      <td class="r">119</td>
+      <td class="r">—</td>
+      <td class="r">39 条 / 4,296 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#d93025">YT</span>
@@ -205,7 +318,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：观看时长 · 点击率 CTR · 平均观看完成度 · 订阅增长 · 流量渠道</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">8 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao _Plastic</strong></td>
@@ -214,16 +331,38 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">9 条 / 3,258 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">近 7 天新增观看 1,761 次</span><span class="extra">最新视频 435 次观看</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">近 7 天新增观看 1,761 次</span><span class="extra">最新视频 435 次观看</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao _Plastic</strong>
         <span>Shorts播放明细（9 条，由新到旧）</span>
         <span class="cnt-sum">合计 3,258 · 均值 362 · 峰值 1,136</span>
       </div>
       <div class="cnt-list"><span class="cnt">323</span><span class="cnt">100</span><span class="cnt">99</span><span class="cnt">1,117</span><span class="cnt">107</span><span class="cnt">16</span><span class="cnt">197</span><span class="cnt">1,136</span><span class="cnt">163</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 3,720 · 互动 27 · 新增关注 0 · 内容 21 条 / 播放 6,683
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao _Plastic</strong></td>
+      <td class="r">3,720</td>
+      <td class="r">27</td>
+      <td class="r">—</td>
+      <td class="r">21 条 / 6,683 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 4,783 · 互动 59 · 新增关注 0 · 内容 38 条 / 播放 7,745
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao _Plastic</strong></td>
+      <td class="r">4,783</td>
+      <td class="r">59</td>
+      <td class="r">0</td>
+      <td class="r">38 条 / 7,745 播放</td>
+    </tr>
+    </table></div>
   </section>
   <section>
     <div class="chap"><span class="chapnum">二</span><h2 style="margin:0">本月运营执行工作复盘</h2></div>
@@ -303,12 +442,6 @@ table.exec th { font-size:12.5px; }
     <div class="chap"><span class="chapnum">六</span><h2 style="margin:0">数据来源与口径说明</h2></div>
     <p>《和禧潮海外社媒 8 月运营数据报表》各平台官方后台截图，经结构化提取与核对后录入。各项数字取自平台官方后台分析面板（Meta 为创作者 / 商企面板的「近 28 天」口径，TikTok 为 Analytics，Instagram 为 IG Insights，YouTube 为 YouTube Analytics），各账号统计窗口详见各平台标注。Facebook 主页「浏览量」为面板原生指标，与内容播放量属不同口径，请勿直接相加解读；「新增关注」为统计期内的净增数，非粉丝总量。</p>
   </section></div><div class="ga-pane" id="sp-2026-09" style="display:none">
-  <section>
-    <div class="chap"><span class="chapnum">INFO</span><h2 style="margin:0">报表基础信息</h2></div>
-    <table class="kv">
-      <tr><th>报表周期</th><td>2026 年 9 月 1 日 — 2026 年 9 月 30 日</td></tr><tr><th>运营账号</th><td>Facebook 个人主页 / Facebook 公共主页 / TikTok / Instagram / YouTube</td></tr><tr><th>统计工具</th><td>Meta Insights、TikTok Analytics、IG Insights、YouTube Analytics</td></tr><tr><th>数据报告人</th><td>佩琪</td></tr><tr><th>报表用途</th><td>社媒账号月度数据复盘 · 内容效能评估 · 流量归因 · 下月策略制定</td></tr>
-    </table>
-  </section>
   <div class="cards">
     <div class="card"><div class="label">覆盖平台</div><div class="value">4<small> 个</small></div><div class="hint">Facebook / Instagram / TikTok / YouTube</div></div><div class="card"><div class="label">运营账号</div><div class="value">5<small> 个</small></div><div class="hint">多账号矩阵协同运营</div></div><div class="card"><div class="label">主页浏览量</div><div class="value">36,659<small> 次</small></div><div class="hint">Meta 双主页近 28 天合计</div></div><div class="card"><div class="label">互动量</div><div class="value">628<small> 次</small></div><div class="hint">点赞 · 评论 · 收藏 · 分享</div></div><div class="card"><div class="label">在发内容</div><div class="value">49<small> 条</small></div><div class="hint">Reels / 短视频滚动窗口</div></div><div class="card"><div class="label">内容总播放</div><div class="value">12,816<small> 次</small></div><div class="hint">四平台内容播放合计</div></div>
   </div>
@@ -327,7 +460,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：曝光触达 · 互动表现 · 覆盖人群 · 流量来源 · 内容效能</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">9 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（本期）</th><th class="r">互动量（本期）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
@@ -342,10 +479,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">3 <span style="color:#0e9f6e;font-size:12px;font-weight:600">▲100%</span></td>
       <td class="r">8 条 / 2,776 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">浏览量环比 +915 倍 · 互动环比 +92 倍</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">浏览量环比 +915 倍 · 互动环比 +92 倍</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>He Xi Chao</strong>
         <span>Reels播放明细（8 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,513 · 均值 314 · 峰值 457</span>
@@ -357,7 +491,44 @@ table.exec th { font-size:12.5px; }
         <span class="cnt-sum">合计 2,776 · 均值 347 · 峰值 773</span>
       </div>
       <div class="cnt-list"><span class="cnt">328</span><span class="cnt">209</span><span class="cnt">253</span><span class="cnt">773</span><span class="cnt">596</span><span class="cnt">79</span><span class="cnt">339</span><span class="cnt">199</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 33,118 · 互动 751 · 新增关注 39 · 内容 24 条 / 播放 7,591
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
+      <td class="r">20,313</td>
+      <td class="r">476</td>
+      <td class="r">36</td>
+      <td class="r">16 条 / 4,815 播放</td>
+    </tr><tr>
+      <td><strong>Hexichao-Plastic</strong><div style="color:#8792a2;font-size:12px">商业主页</div></td>
+      <td class="r">12,805</td>
+      <td class="r">275</td>
+      <td class="r">3</td>
+      <td class="r">8 条 / 2,776 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 60,435 · 互动 1,425 · 新增关注 64 · 内容 42 条 / 播放 12,976
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
+      <td class="r">35,385</td>
+      <td class="r">820</td>
+      <td class="r">61</td>
+      <td class="r">25 条 / 7,671 播放</td>
+    </tr><tr>
+      <td><strong>Hexichao-Plastic</strong><div style="color:#8792a2;font-size:12px">商业主页</div></td>
+      <td class="r">25,050</td>
+      <td class="r">605</td>
+      <td class="r">3</td>
+      <td class="r">17 条 / 5,305 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#e1306c">IG</span>
@@ -366,7 +537,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：Reels 播放 · 主页访问 · 互动率 · 触达人数 · 粉丝画像</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">9 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（本期）</th><th class="r">互动量（本期）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>hexichao_plastic</strong></td>
@@ -375,16 +550,56 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">9 条 / 2,878 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">IG 面板为 30 天口径（8 月 30 日 — 9 月 29 日）</span><span class="extra">Reels 播放 5,923 · 浏览人数 38</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">IG 面板为 30 天口径（8 月 30 日 — 9 月 29 日）</span><span class="extra">Reels 播放 5,923 · 浏览人数 38</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>hexichao_plastic</strong>
         <span>Reels播放明细（9 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,878 · 均值 320 · 峰值 461</span>
       </div>
       <div class="cnt-list"><span class="cnt">364</span><span class="cnt">461</span><span class="cnt">304</span><span class="cnt">423</span><span class="cnt">248</span><span class="cnt">249</span><span class="cnt">285</span><span class="cnt">169</span><span class="cnt">375</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 9,366 · 互动 33 · 新增关注 0 · 内容 21 条 / 播放 5,757
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HexiChao</strong></td>
+      <td class="r">3,430</td>
+      <td class="r">29</td>
+      <td class="r">—</td>
+      <td class="r">12 条 / 2,879 播放</td>
+    </tr><tr>
+      <td><strong>hexichao_plastic</strong></td>
+      <td class="r">5,936</td>
+      <td class="r">4</td>
+      <td class="r">—</td>
+      <td class="r">9 条 / 2,878 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 9,366 · 互动 33 · 新增关注 0 · 内容 39 条 / 播放 11,686
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HexiChao</strong></td>
+      <td class="r">3,430</td>
+      <td class="r">29</td>
+      <td class="r">—</td>
+      <td class="r">12 条 / 2,879 播放</td>
+    </tr><tr>
+      <td><strong>hexichao_plastic</strong></td>
+      <td class="r">5,936</td>
+      <td class="r">4</td>
+      <td class="r">—</td>
+      <td class="r">9 条 / 2,878 播放</td>
+    </tr><tr>
+      <td><strong>HexiChao（账号主页未入镜，以内容页为准）</strong></td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">18 条 / 5,929 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#111827">TT</span>
@@ -393,7 +608,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：播放量 · 完播率 · 平均观看时长 · 粉丝增量 · 流量来源结构</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">9 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（本期）</th><th class="r">互动量（本期）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao</strong></td>
@@ -402,16 +621,38 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">12 条 / 1,224 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">统计窗口 9 月 1 日 — 9 月 28 日（28 天）</span><span class="extra">主页访问 4（-69.2%）· 赞 32（-72.9%）</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">统计窗口 9 月 1 日 — 9 月 28 日（28 天）</span><span class="extra">主页访问 4（-69.2%）· 赞 32（-72.9%）</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao</strong>
         <span>视频播放明细（12 条，由新到旧）</span>
         <span class="cnt-sum">合计 1,224 · 均值 102 · 峰值 148</span>
       </div>
       <div class="cnt-list"><span class="cnt">85</span><span class="cnt">106</span><span class="cnt">115</span><span class="cnt">114</span><span class="cnt">96</span><span class="cnt">79</span><span class="cnt">72</span><span class="cnt">148</span><span class="cnt">82</span><span class="cnt">141</span><span class="cnt">70</span><span class="cnt">116</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 4,200 · 互动 119 · 新增关注 0 · 内容 24 条 / 播放 2,467
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao</strong></td>
+      <td class="r">4,200</td>
+      <td class="r">119</td>
+      <td class="r">—</td>
+      <td class="r">24 条 / 2,467 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 4,200 · 互动 119 · 新增关注 0 · 内容 39 条 / 播放 4,296
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao</strong></td>
+      <td class="r">4,200</td>
+      <td class="r">119</td>
+      <td class="r">—</td>
+      <td class="r">39 条 / 4,296 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#d93025">YT</span>
@@ -420,7 +661,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：观看时长 · 点击率 CTR · 平均观看完成度 · 订阅增长 · 流量渠道</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">9 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q3 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（本期）</th><th class="r">互动量（本期）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao _Plastic</strong></td>
@@ -429,16 +674,38 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">12 条 / 3,425 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">热门 Shorts：1,125 / 1,143 / 414 次观看</span><span class="extra">最新视频 37 次观看</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">热门 Shorts：1,125 / 1,143 / 414 次观看</span><span class="extra">最新视频 37 次观看</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao _Plastic</strong>
         <span>Shorts播放明细（12 条，由新到旧）</span>
         <span class="cnt-sum">合计 3,425 · 均值 285 · 峰值 1,143</span>
       </div>
       <div class="cnt-list"><span class="cnt">1,125</span><span class="cnt">1,143</span><span class="cnt">414</span><span class="cnt">98</span><span class="cnt">121</span><span class="cnt">98</span><span class="cnt">56</span><span class="cnt">107</span><span class="cnt">97</span><span class="cnt">33</span><span class="cnt">72</span><span class="cnt">61</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q3 季度</strong> · 已纳入 2 个月（8 月 + 9 月）·
+    浏览量 3,720 · 互动 27 · 新增关注 0 · 内容 21 条 / 播放 6,683
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao _Plastic</strong></td>
+      <td class="r">3,720</td>
+      <td class="r">27</td>
+      <td class="r">—</td>
+      <td class="r">21 条 / 6,683 播放</td>
+    </tr>
+    </table></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 4,783 · 互动 59 · 新增关注 0 · 内容 38 条 / 播放 7,745
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao _Plastic</strong></td>
+      <td class="r">4,783</td>
+      <td class="r">59</td>
+      <td class="r">0</td>
+      <td class="r">38 条 / 7,745 播放</td>
+    </tr>
+    </table></div>
   </section>
   <section>
     <div class="chap"><span class="chapnum">二</span><h2 style="margin:0">本月运营执行工作复盘</h2></div>
@@ -515,12 +782,6 @@ table.exec th { font-size:12.5px; }
     <div class="chap"><span class="chapnum">六</span><h2 style="margin:0">数据来源与口径说明</h2></div>
     <p>《和禧潮海外社媒 9 月运营数据报表》各平台官方后台截图，经结构化提取与核对后录入。各项数字取自平台官方后台分析面板（Meta 为创作者 / 商企面板的「近 28 天」口径，TikTok 为 Analytics，Instagram 为 IG Insights，YouTube 为 YouTube Analytics），各账号统计窗口详见各平台标注。Facebook 主页「浏览量」为面板原生指标，与内容播放量属不同口径，请勿直接相加解读；「新增关注」为统计期内的净增数，非粉丝总量。</p>
   </section></div><div class="ga-pane" id="sp-2026-10" style="display:block">
-  <section>
-    <div class="chap"><span class="chapnum">INFO</span><h2 style="margin:0">报表基础信息</h2></div>
-    <table class="kv">
-      <tr><th>报表周期</th><td>2026 年 10 月 1 日 — 2026 年 10 月 30 日</td></tr><tr><th>运营账号</th><td>Facebook 个人主页 / Facebook 公共主页 / TikTok / Instagram / YouTube</td></tr><tr><th>统计工具</th><td>Meta Insights、TikTok Analytics、IG Insights、YouTube Analytics</td></tr><tr><th>数据报告人</th><td>佩琪</td></tr><tr><th>报表用途</th><td>社媒账号月度数据复盘 · 内容效能评估 · 流量归因 · 下月策略制定</td></tr>
-    </table>
-  </section>
   <div class="cards">
     <div class="card"><div class="label">覆盖平台</div><div class="value">4<small> 个</small></div><div class="hint">Facebook / Instagram / TikTok / YouTube</div></div><div class="card"><div class="label">运营账号</div><div class="value">5<small> 个</small></div><div class="hint">多账号矩阵协同运营</div></div><div class="card"><div class="label">主页浏览量</div><div class="value">28,380<small> 次</small></div><div class="hint">Meta 双主页近 28 天合计</div></div><div class="card"><div class="label">互动量</div><div class="value">706<small> 次</small></div><div class="hint">点赞 · 评论 · 收藏 · 分享</div></div><div class="card"><div class="label">在发内容</div><div class="value">68<small> 条</small></div><div class="hint">Reels / 短视频滚动窗口</div></div><div class="card"><div class="label">内容总播放</div><div class="value">14,205<small> 次</small></div><div class="hint">四平台内容播放合计</div></div>
   </div>
@@ -539,7 +800,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：曝光触达 · 互动表现 · 覆盖人群 · 流量来源 · 内容效能</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">10 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q4 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
@@ -554,10 +819,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">0 <span style="color:#e02424;font-size:12px;font-weight:600">▼100%</span></td>
       <td class="r">9 条 / 2,529 播放</td>
     </tr>
-    </table>
-    
-    
-    <div class="cnt-wrap">
+    </table><div class="cnt-wrap">
       <div class="cnt-head"><strong>He Xi Chao</strong>
         <span>Reels播放明细（9 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,856 · 均值 317 · 峰值 415</span>
@@ -569,7 +831,44 @@ table.exec th { font-size:12.5px; }
         <span class="cnt-sum">合计 2,529 · 均值 281 · 峰值 352</span>
       </div>
       <div class="cnt-list"><span class="cnt">350</span><span class="cnt">248</span><span class="cnt">179</span><span class="cnt">352</span><span class="cnt">344</span><span class="cnt">339</span><span class="cnt">260</span><span class="cnt">198</span><span class="cnt">259</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q4 季度</strong> · 已纳入 1 个月（10 月）·
+    浏览量 27,317 · 互动 674 · 新增关注 25 · 内容 18 条 / 播放 5,385
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
+      <td class="r">15,072</td>
+      <td class="r">344</td>
+      <td class="r">25</td>
+      <td class="r">9 条 / 2,856 播放</td>
+    </tr><tr>
+      <td><strong>Hexichao-Plastic</strong><div style="color:#8792a2;font-size:12px">商业主页</div></td>
+      <td class="r">12,245</td>
+      <td class="r">330</td>
+      <td class="r">0</td>
+      <td class="r">9 条 / 2,529 播放</td>
+    </tr>
+    </table><div class="scope-note" style="border-left-color:#e0a800">本季度目前仅采集 <strong>10 月</strong> 1 个月数据，数值与月份视图一致；后续月份数据采集后自动并入本季度合计。</div></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 60,435 · 互动 1,425 · 新增关注 64 · 内容 42 条 / 播放 12,976
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
+      <td class="r">35,385</td>
+      <td class="r">820</td>
+      <td class="r">61</td>
+      <td class="r">25 条 / 7,671 播放</td>
+    </tr><tr>
+      <td><strong>Hexichao-Plastic</strong><div style="color:#8792a2;font-size:12px">商业主页</div></td>
+      <td class="r">25,050</td>
+      <td class="r">605</td>
+      <td class="r">3</td>
+      <td class="r">17 条 / 5,305 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#e1306c">IG</span>
@@ -578,7 +877,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：Reels 播放 · 主页访问 · 互动率 · 触达人数 · 粉丝画像</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">10 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q4 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HexiChao（账号主页未入镜，以内容页为准）</strong></td>
@@ -587,16 +890,50 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">18 条 / 5,929 播放</td>
     </tr>
-    </table>
-    
-    
-    <div class="cnt-wrap">
+    </table><div class="cnt-wrap">
       <div class="cnt-head"><strong>HexiChao（账号主页未入镜，以内容页为准）</strong>
         <span>Reels播放明细（18 条，由新到旧）</span>
         <span class="cnt-sum">合计 5,929 · 均值 329 · 峰值 486</span>
       </div>
       <div class="cnt-list"><span class="cnt">219</span><span class="cnt">364</span><span class="cnt">252</span><span class="cnt">317</span><span class="cnt">326</span><span class="cnt">435</span><span class="cnt">486</span><span class="cnt">485</span><span class="cnt">317</span><span class="cnt">13</span><span class="cnt">238</span><span class="cnt">203</span><span class="cnt">315</span><span class="cnt">386</span><span class="cnt">386</span><span class="cnt">411</span><span class="cnt">308</span><span class="cnt">468</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q4 季度</strong> · 已纳入 1 个月（10 月）·
+    浏览量 0 · 互动 0 · 新增关注 0 · 内容 18 条 / 播放 5,929
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HexiChao（账号主页未入镜，以内容页为准）</strong></td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">18 条 / 5,929 播放</td>
+    </tr>
+    </table><div class="scope-note" style="border-left-color:#e0a800">本季度目前仅采集 <strong>10 月</strong> 1 个月数据，数值与月份视图一致；后续月份数据采集后自动并入本季度合计。</div></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 9,366 · 互动 33 · 新增关注 0 · 内容 39 条 / 播放 11,686
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HexiChao</strong></td>
+      <td class="r">3,430</td>
+      <td class="r">29</td>
+      <td class="r">—</td>
+      <td class="r">12 条 / 2,879 播放</td>
+    </tr><tr>
+      <td><strong>hexichao_plastic</strong></td>
+      <td class="r">5,936</td>
+      <td class="r">4</td>
+      <td class="r">—</td>
+      <td class="r">9 条 / 2,878 播放</td>
+    </tr><tr>
+      <td><strong>HexiChao（账号主页未入镜，以内容页为准）</strong></td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">18 条 / 5,929 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#111827">TT</span>
@@ -605,7 +942,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：播放量 · 完播率 · 平均观看时长 · 粉丝增量 · 流量来源结构</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">10 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q4 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao</strong></td>
@@ -614,16 +955,38 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">15 条 / 1,829 播放</td>
     </tr>
-    </table>
-    
-    
-    <div class="cnt-wrap">
+    </table><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao</strong>
         <span>视频播放明细（15 条，由新到旧）</span>
         <span class="cnt-sum">合计 1,829 · 均值 122 · 峰值 155</span>
       </div>
       <div class="cnt-list"><span class="cnt">108</span><span class="cnt">146</span><span class="cnt">155</span><span class="cnt">108</span><span class="cnt">117</span><span class="cnt">105</span><span class="cnt">83</span><span class="cnt">135</span><span class="cnt">126</span><span class="cnt">117</span><span class="cnt">129</span><span class="cnt">105</span><span class="cnt">128</span><span class="cnt">135</span><span class="cnt">132</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q4 季度</strong> · 已纳入 1 个月（10 月）·
+    浏览量 0 · 互动 0 · 新增关注 0 · 内容 15 条 / 播放 1,829
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao</strong></td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">15 条 / 1,829 播放</td>
+    </tr>
+    </table><div class="scope-note" style="border-left-color:#e0a800">本季度目前仅采集 <strong>10 月</strong> 1 个月数据，数值与月份视图一致；后续月份数据采集后自动并入本季度合计。</div></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 4,200 · 互动 119 · 新增关注 0 · 内容 39 条 / 播放 4,296
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao</strong></td>
+      <td class="r">4,200</td>
+      <td class="r">119</td>
+      <td class="r">—</td>
+      <td class="r">39 条 / 4,296 播放</td>
+    </tr>
+    </table></div>
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#d93025">YT</span>
@@ -632,7 +995,11 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：观看时长 · 点击率 CTR · 平均观看完成度 · 订阅增长 · 流量渠道</div>
       </div>
     </div>
-    <table>
+    <div class="plat-tabs ga-tabs">
+      <button class="gtab active" onclick="platTab(this)">10 月</button>
+      <button class="gtab" onclick="platTab(this)">2026 Q4 季度</button><button class="gtab" onclick="platTab(this)">2026 年度</button>
+    </div>
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（近28天）</th><th class="r">互动量（近28天）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao _Plastic</strong><div style="color:#8792a2;font-size:12px">API 自动采集 · 2026-10-12 ~ 2026-11-08</div></td>
@@ -641,9 +1008,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">0</td>
       <td class="r">17 条 / 1,062 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">观看时长 329 分钟</span><span class="extra">平均观看完成度 678.0%</span><span class="extra">平均单次观看 110 秒</span><span class="extra">订阅 1 · 累计播放 6,419</span></div>
-    <div class="auto-wrap">
+    </table><div class="extra-row"><span class="extra">观看时长 329 分钟</span><span class="extra">平均观看完成度 678.0%</span><span class="extra">平均单次观看 110 秒</span><span class="extra">订阅 1 · 累计播放 6,419</span></div><div class="auto-wrap">
     <div class="auto-badge">API 自动采集 · 每日刷新 · 数据源 YouTube Analytics</div>
     <div class="ap-grid"><div class="ap-block" style="grid-column:1/-1">
          <div class="ap-h">近 28 天每日播放走势（YouTube Analytics 自动采集）</div>
@@ -761,14 +1126,38 @@ table.exec th { font-size:12.5px; }
      <td style="text-align:right;font-size:13px;color:#697386">0%</td>
    </tr></table>
     </div>
-  </div>
-    <div class="cnt-wrap">
+  </div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao _Plastic</strong>
         <span>视频播放明细（17 条，由新到旧）</span>
         <span class="cnt-sum">合计 1,062 · 均值 62 · 峰值 262</span>
       </div>
       <div class="cnt-list"><span class="cnt">13</span><span class="cnt">13</span><span class="cnt">13</span><span class="cnt">238</span><span class="cnt">262</span><span class="cnt">179</span><span class="cnt">113</span><span class="cnt">124</span><span class="cnt">11</span><span class="cnt">25</span><span class="cnt">31</span><span class="cnt">6</span><span class="cnt">12</span><span class="cnt">18</span><span class="cnt">1</span><span class="cnt">1</span><span class="cnt">2</span></div>
-    </div>
+    </div></div>
+    <div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 Q4 季度</strong> · 已纳入 1 个月（10 月）·
+    浏览量 1,063 · 互动 32 · 新增关注 0 · 内容 17 条 / 播放 1,062
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（季度合计）</th><th class="r">互动量（季度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao _Plastic</strong><div style="color:#8792a2;font-size:12px">API 自动采集 · 2026-10-12 ~ 2026-11-08</div></td>
+      <td class="r">1,063</td>
+      <td class="r">32</td>
+      <td class="r">0</td>
+      <td class="r">17 条 / 1,062 播放</td>
+    </tr>
+    </table><div class="scope-note" style="border-left-color:#e0a800">本季度目前仅采集 <strong>10 月</strong> 1 个月数据，数值与月份视图一致；后续月份数据采集后自动并入本季度合计。</div></div><div class="plat-pane" style="display:none"><div class="scope-note">
+    <strong>2026 年度</strong> · 已纳入 3 个月（8 月 + 9 月 + 10 月）·
+    浏览量 4,783 · 互动 59 · 新增关注 0 · 内容 38 条 / 播放 7,745
+  </div><table>
+      <tr><th>账号</th><th class="r">浏览量（年度合计）</th><th class="r">互动量（年度合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
+      <tr>
+      <td><strong>HeXiChao _Plastic</strong></td>
+      <td class="r">4,783</td>
+      <td class="r">59</td>
+      <td class="r">0</td>
+      <td class="r">38 条 / 7,745 播放</td>
+    </tr>
+    </table></div>
   </section>
   <section>
     <div class="chap"><span class="chapnum">二</span><h2 style="margin:0">本月运营执行工作复盘</h2></div>
@@ -867,7 +1256,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：曝光触达 · 互动表现 · 覆盖人群 · 流量来源 · 内容效能</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
@@ -882,10 +1272,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">3</td>
       <td class="r">17 条 / 5,305 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">浏览量环比 +915 倍 · 互动环比 +92 倍</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">浏览量环比 +915 倍 · 互动环比 +92 倍</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>He Xi Chao</strong>
         <span>Reels播放明细（25 条，由新到旧）</span>
         <span class="cnt-sum">合计 7,671 · 均值 307 · 峰值 497</span>
@@ -897,7 +1284,8 @@ table.exec th { font-size:12.5px; }
         <span class="cnt-sum">合计 5,305 · 均值 312 · 峰值 773</span>
       </div>
       <div class="cnt-list"><span class="cnt">328</span><span class="cnt">209</span><span class="cnt">253</span><span class="cnt">773</span><span class="cnt">596</span><span class="cnt">79</span><span class="cnt">339</span><span class="cnt">199</span><span class="cnt">350</span><span class="cnt">248</span><span class="cnt">179</span><span class="cnt">352</span><span class="cnt">344</span><span class="cnt">339</span><span class="cnt">260</span><span class="cnt">198</span><span class="cnt">259</span></div>
-    </div>
+    </div></div>
+    
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#e1306c">IG</span>
@@ -906,7 +1294,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：Reels 播放 · 主页访问 · 互动率 · 触达人数 · 粉丝画像</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HexiChao</strong></td>
@@ -927,10 +1316,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">18 条 / 5,929 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">IG 面板为 60 天口径（7 月 9 日 — 9 月 6 日）</span><span class="extra">浏览人数 1,041</span></div><div class="extra-row"><span class="extra">IG 面板为 30 天口径（8 月 30 日 — 9 月 29 日）</span><span class="extra">Reels 播放 5,923 · 浏览人数 38</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">IG 面板为 60 天口径（7 月 9 日 — 9 月 6 日）</span><span class="extra">浏览人数 1,041</span></div><div class="extra-row"><span class="extra">IG 面板为 30 天口径（8 月 30 日 — 9 月 29 日）</span><span class="extra">Reels 播放 5,923 · 浏览人数 38</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HexiChao</strong>
         <span>Reels播放明细（12 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,879 · 均值 240 · 峰值 536</span>
@@ -948,7 +1334,8 @@ table.exec th { font-size:12.5px; }
         <span class="cnt-sum">合计 5,929 · 均值 329 · 峰值 486</span>
       </div>
       <div class="cnt-list"><span class="cnt">219</span><span class="cnt">364</span><span class="cnt">252</span><span class="cnt">317</span><span class="cnt">326</span><span class="cnt">435</span><span class="cnt">486</span><span class="cnt">485</span><span class="cnt">317</span><span class="cnt">13</span><span class="cnt">238</span><span class="cnt">203</span><span class="cnt">315</span><span class="cnt">386</span><span class="cnt">386</span><span class="cnt">411</span><span class="cnt">308</span><span class="cnt">468</span></div>
-    </div>
+    </div></div>
+    
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#111827">TT</span>
@@ -957,7 +1344,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：播放量 · 完播率 · 平均观看时长 · 粉丝增量 · 流量来源结构</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao</strong></td>
@@ -966,16 +1354,14 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">39 条 / 4,296 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">赞 86（+138.9%）· 评论 1 · 主页访问 8（+60%）</span><span class="extra">统计窗口 8 月 9 日 — 9 月 5 日（28 天）</span><span class="extra">统计窗口 9 月 1 日 — 9 月 28 日（28 天）</span><span class="extra">主页访问 4（-69.2%）· 赞 32（-72.9%）</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">赞 86（+138.9%）· 评论 1 · 主页访问 8（+60%）</span><span class="extra">统计窗口 8 月 9 日 — 9 月 5 日（28 天）</span><span class="extra">统计窗口 9 月 1 日 — 9 月 28 日（28 天）</span><span class="extra">主页访问 4（-69.2%）· 赞 32（-72.9%）</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao</strong>
         <span>视频播放明细（39 条，由新到旧）</span>
         <span class="cnt-sum">合计 4,296 · 均值 110 · 峰值 155</span>
       </div>
       <div class="cnt-list"><span class="cnt">94</span><span class="cnt">106</span><span class="cnt">98</span><span class="cnt">128</span><span class="cnt">129</span><span class="cnt">99</span><span class="cnt">77</span><span class="cnt">108</span><span class="cnt">97</span><span class="cnt">105</span><span class="cnt">103</span><span class="cnt">99</span><span class="cnt">85</span><span class="cnt">106</span><span class="cnt">115</span><span class="cnt">114</span><span class="cnt">96</span><span class="cnt">79</span><span class="cnt">72</span><span class="cnt">148</span><span class="cnt">82</span><span class="cnt">141</span><span class="cnt">70</span><span class="cnt">116</span><span class="cnt">108</span><span class="cnt">146</span><span class="cnt">155</span><span class="cnt">108</span><span class="cnt">117</span><span class="cnt">105</span><span class="cnt">83</span><span class="cnt">135</span><span class="cnt">126</span><span class="cnt">117</span><span class="cnt">129</span><span class="cnt">105</span><span class="cnt">128</span><span class="cnt">135</span><span class="cnt">132</span></div>
-    </div>
+    </div></div>
+    
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#d93025">YT</span>
@@ -984,7 +1370,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：观看时长 · 点击率 CTR · 平均观看完成度 · 订阅增长 · 流量渠道</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao _Plastic</strong></td>
@@ -993,16 +1380,14 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">39 条 / 8,505 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">近 7 天新增观看 1,761 次</span><span class="extra">最新视频 435 次观看</span><span class="extra">热门 Shorts：1,125 / 1,143 / 414 次观看</span><span class="extra">最新视频 37 次观看</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">近 7 天新增观看 1,761 次</span><span class="extra">最新视频 435 次观看</span><span class="extra">热门 Shorts：1,125 / 1,143 / 414 次观看</span><span class="extra">最新视频 37 次观看</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao _Plastic</strong>
         <span>Shorts播放明细（39 条，由新到旧）</span>
         <span class="cnt-sum">合计 8,505 · 均值 218 · 峰值 1,143</span>
       </div>
       <div class="cnt-list"><span class="cnt">323</span><span class="cnt">100</span><span class="cnt">99</span><span class="cnt">1,117</span><span class="cnt">107</span><span class="cnt">16</span><span class="cnt">197</span><span class="cnt">1,136</span><span class="cnt">163</span><span class="cnt">1,125</span><span class="cnt">1,143</span><span class="cnt">414</span><span class="cnt">98</span><span class="cnt">121</span><span class="cnt">98</span><span class="cnt">56</span><span class="cnt">107</span><span class="cnt">97</span><span class="cnt">33</span><span class="cnt">72</span><span class="cnt">61</span><span class="cnt">22</span><span class="cnt">28</span><span class="cnt">20</span><span class="cnt">244</span><span class="cnt">267</span><span class="cnt">182</span><span class="cnt">113</span><span class="cnt">124</span><span class="cnt">11</span><span class="cnt">98</span><span class="cnt">133</span><span class="cnt">79</span><span class="cnt">19</span><span class="cnt">99</span><span class="cnt">121</span><span class="cnt">98</span><span class="cnt">56</span><span class="cnt">108</span></div>
-    </div>
+    </div></div>
+    
   </section></div><div class="ga-pane" id="sp-ytd" style="display:none">
   <div class="cards">
     <div class="card"><div class="label">覆盖平台</div><div class="value">4<small> 个</small></div><div class="hint">Facebook / Instagram / TikTok / YouTube</div></div><div class="card"><div class="label">运营账号</div><div class="value">7<small> 个</small></div><div class="hint">多账号矩阵协同运营</div></div><div class="card"><div class="label">主页浏览量</div><div class="value">77,721<small> 次</small></div><div class="hint">Meta 双主页近 28 天合计</div></div><div class="card"><div class="label">互动量</div><div class="value">1,604<small> 次</small></div><div class="hint">点赞 · 评论 · 收藏 · 分享</div></div><div class="card"><div class="label">在发内容</div><div class="value">159<small> 条</small></div><div class="hint">Reels / 短视频滚动窗口</div></div><div class="card"><div class="label">内容总播放</div><div class="value">37,463<small> 次</small></div><div class="hint">四平台内容播放合计</div></div>
@@ -1031,7 +1416,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：曝光触达 · 互动表现 · 覆盖人群 · 流量来源 · 内容效能</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>He Xi Chao</strong><div style="color:#8792a2;font-size:12px">创作者主页</div></td>
@@ -1046,10 +1432,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">3</td>
       <td class="r">17 条 / 5,305 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">浏览量环比 +915 倍 · 互动环比 +92 倍</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">浏览量环比 +915 倍 · 互动环比 +92 倍</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>He Xi Chao</strong>
         <span>Reels播放明细（25 条，由新到旧）</span>
         <span class="cnt-sum">合计 7,671 · 均值 307 · 峰值 497</span>
@@ -1061,7 +1444,8 @@ table.exec th { font-size:12.5px; }
         <span class="cnt-sum">合计 5,305 · 均值 312 · 峰值 773</span>
       </div>
       <div class="cnt-list"><span class="cnt">328</span><span class="cnt">209</span><span class="cnt">253</span><span class="cnt">773</span><span class="cnt">596</span><span class="cnt">79</span><span class="cnt">339</span><span class="cnt">199</span><span class="cnt">350</span><span class="cnt">248</span><span class="cnt">179</span><span class="cnt">352</span><span class="cnt">344</span><span class="cnt">339</span><span class="cnt">260</span><span class="cnt">198</span><span class="cnt">259</span></div>
-    </div>
+    </div></div>
+    
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#e1306c">IG</span>
@@ -1070,7 +1454,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：Reels 播放 · 主页访问 · 互动率 · 触达人数 · 粉丝画像</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HexiChao</strong></td>
@@ -1091,10 +1476,7 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">18 条 / 5,929 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">IG 面板为 60 天口径（7 月 9 日 — 9 月 6 日）</span><span class="extra">浏览人数 1,041</span></div><div class="extra-row"><span class="extra">IG 面板为 30 天口径（8 月 30 日 — 9 月 29 日）</span><span class="extra">Reels 播放 5,923 · 浏览人数 38</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">IG 面板为 60 天口径（7 月 9 日 — 9 月 6 日）</span><span class="extra">浏览人数 1,041</span></div><div class="extra-row"><span class="extra">IG 面板为 30 天口径（8 月 30 日 — 9 月 29 日）</span><span class="extra">Reels 播放 5,923 · 浏览人数 38</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HexiChao</strong>
         <span>Reels播放明细（12 条，由新到旧）</span>
         <span class="cnt-sum">合计 2,879 · 均值 240 · 峰值 536</span>
@@ -1112,7 +1494,8 @@ table.exec th { font-size:12.5px; }
         <span class="cnt-sum">合计 5,929 · 均值 329 · 峰值 486</span>
       </div>
       <div class="cnt-list"><span class="cnt">219</span><span class="cnt">364</span><span class="cnt">252</span><span class="cnt">317</span><span class="cnt">326</span><span class="cnt">435</span><span class="cnt">486</span><span class="cnt">485</span><span class="cnt">317</span><span class="cnt">13</span><span class="cnt">238</span><span class="cnt">203</span><span class="cnt">315</span><span class="cnt">386</span><span class="cnt">386</span><span class="cnt">411</span><span class="cnt">308</span><span class="cnt">468</span></div>
-    </div>
+    </div></div>
+    
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#111827">TT</span>
@@ -1121,7 +1504,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：播放量 · 完播率 · 平均观看时长 · 粉丝增量 · 流量来源结构</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao</strong></td>
@@ -1130,16 +1514,14 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">39 条 / 4,296 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">赞 86（+138.9%）· 评论 1 · 主页访问 8（+60%）</span><span class="extra">统计窗口 8 月 9 日 — 9 月 5 日（28 天）</span><span class="extra">统计窗口 9 月 1 日 — 9 月 28 日（28 天）</span><span class="extra">主页访问 4（-69.2%）· 赞 32（-72.9%）</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">赞 86（+138.9%）· 评论 1 · 主页访问 8（+60%）</span><span class="extra">统计窗口 8 月 9 日 — 9 月 5 日（28 天）</span><span class="extra">统计窗口 9 月 1 日 — 9 月 28 日（28 天）</span><span class="extra">主页访问 4（-69.2%）· 赞 32（-72.9%）</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao</strong>
         <span>视频播放明细（39 条，由新到旧）</span>
         <span class="cnt-sum">合计 4,296 · 均值 110 · 峰值 155</span>
       </div>
       <div class="cnt-list"><span class="cnt">94</span><span class="cnt">106</span><span class="cnt">98</span><span class="cnt">128</span><span class="cnt">129</span><span class="cnt">99</span><span class="cnt">77</span><span class="cnt">108</span><span class="cnt">97</span><span class="cnt">105</span><span class="cnt">103</span><span class="cnt">99</span><span class="cnt">85</span><span class="cnt">106</span><span class="cnt">115</span><span class="cnt">114</span><span class="cnt">96</span><span class="cnt">79</span><span class="cnt">72</span><span class="cnt">148</span><span class="cnt">82</span><span class="cnt">141</span><span class="cnt">70</span><span class="cnt">116</span><span class="cnt">108</span><span class="cnt">146</span><span class="cnt">155</span><span class="cnt">108</span><span class="cnt">117</span><span class="cnt">105</span><span class="cnt">83</span><span class="cnt">135</span><span class="cnt">126</span><span class="cnt">117</span><span class="cnt">129</span><span class="cnt">105</span><span class="cnt">128</span><span class="cnt">135</span><span class="cnt">132</span></div>
-    </div>
+    </div></div>
+    
   </section><section>
     <div class="plat-head">
       <span class="plogo" style="background:#d93025">YT</span>
@@ -1148,7 +1530,8 @@ table.exec th { font-size:12.5px; }
         <div class="monitor">核心监测：观看时长 · 点击率 CTR · 平均观看完成度 · 订阅增长 · 流量渠道</div>
       </div>
     </div>
-    <table>
+    
+    <div class="plat-pane" style="display:block"><table>
       <tr><th>账号</th><th class="r">浏览量（合计）</th><th class="r">互动量（合计）</th><th class="r">新增关注</th><th class="r">在发内容 / 播放</th></tr>
       <tr>
       <td><strong>HeXiChao _Plastic</strong></td>
@@ -1157,16 +1540,14 @@ table.exec th { font-size:12.5px; }
       <td class="r">—</td>
       <td class="r">39 条 / 8,505 播放</td>
     </tr>
-    </table>
-    <div class="extra-row"><span class="extra">近 7 天新增观看 1,761 次</span><span class="extra">最新视频 435 次观看</span><span class="extra">热门 Shorts：1,125 / 1,143 / 414 次观看</span><span class="extra">最新视频 37 次观看</span></div>
-    
-    <div class="cnt-wrap">
+    </table><div class="extra-row"><span class="extra">近 7 天新增观看 1,761 次</span><span class="extra">最新视频 435 次观看</span><span class="extra">热门 Shorts：1,125 / 1,143 / 414 次观看</span><span class="extra">最新视频 37 次观看</span></div><div class="cnt-wrap">
       <div class="cnt-head"><strong>HeXiChao _Plastic</strong>
         <span>Shorts播放明细（39 条，由新到旧）</span>
         <span class="cnt-sum">合计 8,505 · 均值 218 · 峰值 1,143</span>
       </div>
       <div class="cnt-list"><span class="cnt">323</span><span class="cnt">100</span><span class="cnt">99</span><span class="cnt">1,117</span><span class="cnt">107</span><span class="cnt">16</span><span class="cnt">197</span><span class="cnt">1,136</span><span class="cnt">163</span><span class="cnt">1,125</span><span class="cnt">1,143</span><span class="cnt">414</span><span class="cnt">98</span><span class="cnt">121</span><span class="cnt">98</span><span class="cnt">56</span><span class="cnt">107</span><span class="cnt">97</span><span class="cnt">33</span><span class="cnt">72</span><span class="cnt">61</span><span class="cnt">22</span><span class="cnt">28</span><span class="cnt">20</span><span class="cnt">244</span><span class="cnt">267</span><span class="cnt">182</span><span class="cnt">113</span><span class="cnt">124</span><span class="cnt">11</span><span class="cnt">98</span><span class="cnt">133</span><span class="cnt">79</span><span class="cnt">19</span><span class="cnt">99</span><span class="cnt">121</span><span class="cnt">98</span><span class="cnt">56</span><span class="cnt">108</span></div>
-    </div>
+    </div></div>
+    
   </section></div>
 
   <footer>「YouTube」已接入官方 API 每日自动采集 · 其余平台为后台截图口径</footer>
@@ -1179,7 +1560,15 @@ function spTab(btn, id) {
   document.querySelectorAll('.ga-pane').forEach(p => { p.style.display = 'none'; });
   const pane = document.getElementById(id);
   pane.style.display = 'block';
-  window.scrollTo({ top: 0 });
+}
+// 单平台的月份 / 季度 / 年度切页（只在当前平台 section 内生效）
+function platTab(btn) {
+  const sec = btn.closest('section');
+  if (!sec) return;
+  const tabs = [...sec.querySelectorAll('.plat-tabs .gtab')];
+  const idx = tabs.indexOf(btn);
+  tabs.forEach((b, i) => b.classList.toggle('active', i === idx));
+  sec.querySelectorAll('.plat-pane').forEach((p, i) => { p.style.display = i === idx ? 'block' : 'none'; });
 }
 document.addEventListener('DOMContentLoaded', () => {
   // 默认页已由服务端标记，这里只兜底：若没有任何可见 pane，则打开第一个
