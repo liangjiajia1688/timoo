@@ -81,35 +81,197 @@ function gaTab(btn, key, i) {
   var el = document.getElementById("gaw-" + key + "-" + i);
   if (el) el.style.display = "block";
 }
+function pubTab(btn, key, i) {
+  var sec = btn.closest("section");
+  sec.querySelectorAll(".gtab").forEach(function (b) { b.classList.remove("active"); });
+  btn.classList.add("active");
+  sec.querySelectorAll(".ga-pane").forEach(function (p) { p.style.display = "none"; });
+  var el = document.getElementById("pubw-" + key + "-" + i);
+  if (el) el.style.display = "block";
+}
 </script></head><body>
 <div class="wrap">
   <div class="hero">
-    <span class="badge">2026年11月 · 月度运营报告</span>
+    <span class="badge">2026年11月 · 独立站月度运营报告</span>
     <h1>Two Claw 两爪机</h1>
-    <div class="sub">https://yjgamefun.com · 数据更新至 2026-11-08 · 报告生成于 2026/11/9 16:55:17</div>
+    <div class="sub">https://yjgamefun.com · 数据更新至 2026-11-08 · 报告生成于 2026/11/9 17:24:13</div>
   </div>
+
+  <section><h2>报表基础信息</h2>
+    <table>
+      <tr><td style="width:26%;font-weight:bold">统计维度</td><td>独立站 <a href="https://yjgamefun.com" target="_blank">https://yjgamefun.com</a></td></tr>
+      <tr><td style="font-weight:bold">报表周期</td><td>2026 年 11 月 01 日 - 2026-11-08（数据截至报告生成日）</td></tr>
+      <tr><td style="font-weight:bold">运营站点</td><td><a href="https://yjgamefun.com" target="_blank">https://yjgamefun.com</a></td></tr>
+      <tr><td style="font-weight:bold">统计工具</td><td>Google Analytics (GA4)、Google Search Console (GSC)、Google PageSpeed Insights、站点后台监测工具</td></tr>
+      <tr><td style="font-weight:bold">运营人</td><td>梁仕嘉</td></tr>
+      <tr><td style="font-weight:bold">报表用途</td><td>独立站月度数据复盘 · 优化效果核查 · 问题排查</td></tr>
+    </table>
+  </section>
 
   <div class="cards">
     <div class="card"><div class="label">本月发文</div><div class="value">6<small> 篇</small></div><div class="hint">累计 6 篇</div></div>
-    <div class="card"><div class="label">访客（近90天）</div><div class="value">192<small> 人</small></div><div class="hint">本月至今 24 人 · 会话 217 次</div></div>
-    <div class="card"><div class="label">搜索曝光（近90天）</div><div class="value">325<small> 次</small></div><div class="hint">本月至今 26 次 · 点击 4 次</div></div>
-    <div class="card"><div class="label">站点状态</div><div class="value green">正常</div><div class="hint">响应 2684 ms · Sitemap 正常</div></div>
+    <div class="card"><div class="label">访客（季度）</div><div class="value">192<small> 人</small></div><div class="hint">本月至今 24 人 · 会话 217 次</div></div>
+    <div class="card"><div class="label">搜索曝光（季度）</div><div class="value">325<small> 次</small></div><div class="hint">本月至今 26 次 · 点击 4 次</div></div>
+    <div class="card"><div class="label">站点状态</div><div class="value green">正常</div><div class="hint">响应 9706 ms · Sitemap 正常</div></div>
     <div class="card"><div class="label">移动端性能</div><div class="value ">—</div><div class="hint">PageSpeed 移动端</div></div>
     <div class="card"><div class="label">桌面端性能</div><div class="value ">—</div><div class="hint">PageSpeed 桌面端</div></div>
   </div>
 
-  <section><h2>一、执行摘要</h2><p>本期报告为 Two Claw 两爪机（yjgamefun.com） 2026年11月 的月度运营数据汇总，覆盖内容发布、站点健康、页面性能与搜索引擎数据四个维度，旨在客观呈现本月运营动作与各项指标变化，并给出下一阶段的优化方向。</p><p>内容产出方面，本月站点共发布英文营销文章 <strong>6 篇</strong>，自自动化发布系统上线以来累计发布 6 篇。所有文章均由「角度轮换 + 变量组合」的内容引擎生成，围绕 企业产品与服务场景持续产出，配合自动压缩、图文对应的特色图上传流程，保证了内容质量与更新频率的双重稳定。</p><p>站点可用性方面，本月监测期内首页访问正常（HTTP 200），服务器平均响应 2684 ms，Sitemap 可正常访问，整体运行平稳，具备承接自然流量增长的基础。</p><p>页面性能方面，本期 Google PageSpeed 接口出现限流，测速数据将在下期报告中补齐；该项监测已纳入固定流程，不影响其余板块结论。</p><p>流量表现方面，本期 GA4 记录到 <strong>24</strong> 位访客、<strong>27</strong> 次会话（环比 ▲ 100.0% / ▲ 125.0%），Search Console 同期录得 <strong>26</strong> 次 Google 搜索曝光与 <strong>1</strong> 次点击（环比 ▼ 21.2% / 0.0%），第一大流量来源为「直接访问」。这组数据标志着运营工作已从"只看得见发了多少篇"进入"能看清带来多少访客与曝光"的阶段，本月各项数据的完整解读见第四章。</p></section><section><h2>二、站点概况与基础信息</h2><p>Two Claw 是专注于商用抓娃娃机与礼品机的出口制造品牌，产品覆盖单机、双人机、多机位系列，主要面向海外电玩城、商场中岛与零售门店客户。站点以英文博客为核心内容阵地，围绕产品卖点、场地运营与买家决策场景持续输出营销内容。</p><p>内容策略上采取「每日一篇、角度轮换」的长期运营机制，选题覆盖场地适配、产品品质、玩家体验、供应商信任、日式设计等九大方向，配合随机轮换的机台实拍主图，保证内容既不重样、又与产品线强关联，持续积累长尾搜索关键词的收录与排名。</p><table>
+  <section><h2>一、执行摘要</h2><p>本期报告为 Two Claw 两爪机（yjgamefun.com） 2026年11月 的月度运营数据汇总，覆盖内容发布、站点健康、页面性能与搜索引擎数据四个维度，旨在客观呈现本月运营动作与各项指标变化，并给出下一阶段的优化方向。</p><p>内容产出方面，本月站点共发布英文营销文章 <strong>6 篇</strong>，自自动化发布系统上线以来累计发布 6 篇。所有文章均由「角度轮换 + 变量组合」的内容引擎生成，围绕 企业产品与服务场景持续产出，配合自动压缩、图文对应的特色图上传流程，保证了内容质量与更新频率的双重稳定。</p><p>站点可用性方面，本月监测期内首页访问正常（HTTP 200），服务器平均响应 9706 ms，Sitemap 可正常访问，整体运行存在响应偏慢的情况，已列入本期诊断与优化建议。</p><p>页面性能方面，本期 Google PageSpeed 接口出现限流，测速数据将在下期报告中补齐；该项监测已纳入固定流程，不影响其余板块结论。</p><p>流量表现方面，本期 GA4 记录到 <strong>24</strong> 位访客、<strong>27</strong> 次会话（环比 ▲ 100.0% / ▲ 125.0%），Search Console 同期录得 <strong>26</strong> 次 Google 搜索曝光与 <strong>1</strong> 次点击（环比 ▼ 21.2% / 0.0%），第一大流量来源为「直接访问」。这组数据标志着运营工作已从"只看得见发了多少篇"进入"能看清带来多少访客与曝光"的阶段，本月各项数据的完整解读见第四章。</p></section><section><h2>二、站点概况与基础信息</h2><p>Two Claw 是专注于商用抓娃娃机与礼品机的出口制造品牌，产品覆盖单机、双人机、多机位系列，主要面向海外电玩城、商场中岛与零售门店客户。站点以英文博客为核心内容阵地，围绕产品卖点、场地运营与买家决策场景持续输出营销内容。</p><p>内容策略上采取「每日一篇、角度轮换」的长期运营机制，选题覆盖场地适配、产品品质、玩家体验、供应商信任、日式设计等九大方向，配合随机轮换的机台实拍主图，保证内容既不重样、又与产品线强关联，持续积累长尾搜索关键词的收录与排名。</p><table>
     <tr><td style="width:32%;font-weight:bold">站点地址</td><td>https://yjgamefun.com</td></tr>
     <tr><td style="font-weight:bold">站点状态</td><td>正常（HTTP 200）</td></tr>
-    <tr><td style="font-weight:bold">服务器响应时间</td><td>2684 ms</td></tr>
+    <tr><td style="font-weight:bold">服务器响应时间</td><td>9706 ms</td></tr>
     <tr><td style="font-weight:bold">HTTPS 加密</td><td>已启用（全站加密访问）</td></tr>
     <tr><td style="font-weight:bold">Sitemap 站点地图</td><td>可访问，搜索引擎可正常发现新内容</td></tr>
     <tr><td style="font-weight:bold">首页标题</td><td>Home - yjgamefun.com</td></tr>
     <tr><td style="font-weight:bold">本月发文 / 累计发文</td><td>6 篇 / 6 篇</td></tr>
   </table><p>监测说明：以上数据由自动化系统在报告生成时实时探测获得，包括首页 HTTP 状态、完整请求响应耗时与 Sitemap 可达性。响应耗时包含 DNS 解析、TLS 握手与首字节时间的完整链路，首次探测数值通常略高于日常均值，用于跨月趋势对比更有参考意义。</p></section><section><h2>三、页面速度与性能表现</h2><table><tr><td style="width:18%;font-weight:bold">测试端</td><td style="font-weight:bold">性能得分（满分100）</td><td style="font-weight:bold">LCP 最大内容绘制</td><td style="font-weight:bold">CLS 布局偏移</td></tr>
     <tr><td>移动端</td><td style="font-weight:bold">—</td><td>—</td><td>—</td></tr>
-    <tr><td>桌面端</td><td style="font-weight:bold">—</td><td>—</td><td>—</td></tr></table><p>移动端测速数据本次因 Google 接口限流未能获取，将在下期报告中补齐。通常新观察一个站点的速度表现，建议连续跟踪 2~3 期再下结论。</p><p>桌面端测速数据本次因 Google 接口限流未能获取，将在下期报告中补齐。通常新观察一个站点的速度表现，建议连续跟踪 2~3 期再下结论。</p><p>指标说明：<strong>LCP（最大内容绘制）</strong>衡量页面主内容完成渲染的时间，2.5 秒以内为良好，超过 4 秒则明显影响体验；<strong>CLS（布局偏移）</strong>衡量页面加载过程中元素的稳定性，低于 0.1 为佳，数值过高意味着图片或广告位会顶开正文，影响阅读与转化。本站特色图已在发布链路中自动压缩（宽度不超过 1600px、JPEG 质量优化），从源头控制了图片对 LCP 的影响。</p></section><section><h2>四、搜索引擎与流量数据（GA4 / Search Console）</h2><p>下方数据支持切换统计周期：<strong>近 90 天</strong>适合看整体趋势，<strong>本月月至今</strong>与<strong>上月 / 上上月</strong>适合做月度对比，点击按钮即可切换。</p>
-        <div class="ga-tabs"><button type="button" class="gtab active" onclick="gaTab(this,'yjgamefun',0)">近 90 天</button><button type="button" class="gtab" onclick="gaTab(this,'yjgamefun',1)">本月月至今</button><button type="button" class="gtab" onclick="gaTab(this,'yjgamefun',2)">上月 2026-10</button><button type="button" class="gtab" onclick="gaTab(this,'yjgamefun',3)">上上月 2026-09</button></div><div class="ga-pane" id="gaw-yjgamefun-0" style="display:block"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>滚动近 90 天</strong>：本期 2026-08-11 至 2026-11-08，环比对象为其<strong>前一个 90 天（2026-05-13 至 2026-08-10）</strong>——同样的天数对同样的天数。将 90 天作为默认口径，是因为站点起步阶段的日流量波动较大，观察窗口越长，趋势越接近真实水平，偶发的单日起伏不会被放大误读；随着数据积累，可随时切换到下方更细的月度口径查看。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
+    <tr><td>桌面端</td><td style="font-weight:bold">—</td><td>—</td><td>—</td></tr></table><p>移动端测速数据本次因 Google 接口限流未能获取，将在下期报告中补齐。通常新观察一个站点的速度表现，建议连续跟踪 2~3 期再下结论。</p><p>桌面端测速数据本次因 Google 接口限流未能获取，将在下期报告中补齐。通常新观察一个站点的速度表现，建议连续跟踪 2~3 期再下结论。</p><p>指标说明：<strong>LCP（最大内容绘制）</strong>衡量页面主内容完成渲染的时间，2.5 秒以内为良好，超过 4 秒则明显影响体验；<strong>CLS（布局偏移）</strong>衡量页面加载过程中元素的稳定性，低于 0.1 为佳，数值过高意味着图片或广告位会顶开正文，影响阅读与转化。本站特色图已在发布链路中自动压缩（宽度不超过 1600px、JPEG 质量优化），从源头控制了图片对 LCP 的影响。</p></section><section><h2>四、搜索引擎与流量数据（GA4 / Search Console）</h2><p>下方数据支持切换统计周期：<strong>月度</strong>看本月表现，<strong>季度（近 90 天）</strong>看整体趋势，<strong>年度</strong>看年初至今的累计增长，点击按钮即可切换。</p>
+        <div class="ga-tabs"><button type="button" class="gtab active" onclick="gaTab(this,'yjgamefun',0)">月度</button><button type="button" class="gtab" onclick="gaTab(this,'yjgamefun',1)">季度（近 90 天）</button><button type="button" class="gtab" onclick="gaTab(this,'yjgamefun',2)">年度（年初至今）</button></div><div class="ga-pane" id="gaw-yjgamefun-0" style="display:block"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>月度（本月月至今）</strong>：本期 2026-11-01 至 2026-11-08（截至报告生成日），环比对象为<strong>上月同期 2026-10-01 至 2026-10-08</strong>——即"同样的天数对同样的天数"，避免本月尚未过完时与上月整月直接相比而被误读为大幅下滑。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
+    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
+      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">访客数（去重用户）</div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">24<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">人</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 100.0%</span><span style="color:#8792a2"> 新访客 24</span></div>
+    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
+    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
+      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">会话数</div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">27<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 125.0%</span><span style="color:#8792a2"> 参与会话 3</span></div>
+    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
+    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
+      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">页面浏览量</div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">39<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 254.5%</span><span style="color:#8792a2"> 人均 1.6 页</span></div>
+    </div></td></tr><tr><td style="width:33.33%;padding:6px;vertical-align:top">
+    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
+      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索曝光</div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">26<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▼ 21.2%</span><span style="color:#8792a2"> 覆盖关键词 5 个</span></div>
+    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
+    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
+      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索点击</div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">1<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#8792a2;font-weight:600">0.0%</span><span style="color:#8792a2"> 点击率 3.8%</span></div>
+    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
+    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
+      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">平均排名</div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">34.2<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">位</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▲ 37.5%</span><span style="color:#8792a2"> 数值越小越靠前</span></div>
+    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　月度每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
+    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">3</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">8</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><defs><linearGradient id="gdtyjgamefun-mtd0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 158.0 L210.0 122.0 L374.0 32.0 L538.0 140.0 L702.0 122.0 L866.0 140.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-mtd0)"/><path d="M46.0 158.0 L210.0 122.0 L374.0 32.0 L538.0 140.0 L702.0 122.0 L866.0 140.0" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="140.0" r="3.4" fill="#fff" stroke="#3b82f6" stroke-width="2.2"/><defs><linearGradient id="gdtyjgamefun-mtd1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 158.0 L210.0 122.0 L374.0 14.0 L538.0 140.0 L702.0 104.0 L866.0 140.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-mtd1)"/><path d="M46.0 158.0 L210.0 122.0 L374.0 14.0 L538.0 140.0 L702.0 104.0 L866.0 140.0" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="140.0" r="3.4" fill="#fff" stroke="#8b5cf6" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/03</text><text x="210.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/04</text><text x="374.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/05</text><text x="538.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/06</text><text x="702.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/07</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/08</text></svg>
+    <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
+      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#3b82f6"></i>访客数</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
+      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#8b5cf6"></i>会话数</span></div></div><table style="width:100%;border-collapse:separate;border-spacing:8px 0;margin:4px 0 8px">
+      <tr>
+        <td style="width:58%;vertical-align:top;border:1px solid #e3e8ef;border-radius:8px;padding:12px 14px">
+          <div style="font-weight:600;font-size:13.5px;margin-bottom:6px">流量渠道结构（按会话）</div>
+          <table style="width:100%;border-collapse:collapse">
+            <tr><th style="font-size:12px">渠道</th><th style="font-size:12px;text-align:right">会话</th><th style="font-size:12px;text-align:right">占比</th></tr>
+            <tr>
+        <td style="font-size:13px">直接访问</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">24</td>
+        <td style="text-align:right;font-size:13px;color:#697386">89%</td>
+      </tr><tr>
+        <td style="font-size:13px">自然搜索</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">3</td>
+        <td style="text-align:right;font-size:13px;color:#697386">11%</td>
+      </tr>
+          </table>
+        </td>
+        <td style="width:42%;vertical-align:top;border:1px solid #e3e8ef;border-radius:8px;padding:12px 14px">
+          <div style="font-weight:600;font-size:13.5px;margin-bottom:6px">访客国家 / 地区分布</div>
+          <table style="width:100%;border-collapse:collapse">
+            <tr><th style="font-size:12px">国家/地区</th><th style="font-size:12px;text-align:right">会话</th></tr>
+            <tr>
+        <td style="font-size:13px">China</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">21</td>
+      </tr><tr>
+        <td style="font-size:13px">Vietnam</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">5</td>
+      </tr><tr>
+        <td style="font-size:13px">Taiwan</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
+      </tr>
+          </table>
+        </td>
+      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　月度每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
+    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">15</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">20</text><defs><linearGradient id="gdsyjgamefun-mtd0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity=".22"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L182.7 50.0 L319.3 194.0 L456.0 185.0 L592.7 176.0 L729.3 149.0 L866.0 176.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-mtd0)"/><path d="M46.0 194.0 L182.7 50.0 L319.3 194.0 L456.0 185.0 L592.7 176.0 L729.3 149.0 L866.0 176.0" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="176.0" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2.2"/><defs><linearGradient id="gdsyjgamefun-mtd1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e9f6e" stop-opacity=".22"/><stop offset="100%" stop-color="#0e9f6e" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L182.7 194.0 L319.3 194.0 L456.0 194.0 L592.7 194.0 L729.3 185.0 L866.0 194.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-mtd1)"/><path d="M46.0 194.0 L182.7 194.0 L319.3 194.0 L456.0 194.0 L592.7 194.0 L729.3 185.0 L866.0 194.0" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="194.0" r="3.4" fill="#fff" stroke="#0e9f6e" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/01</text><text x="319.3" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/03</text><text x="592.7" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/05</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/07</text></svg>
+    <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
+      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#f59e0b"></i>曝光量</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
+      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#0e9f6e"></i>点击量</span></div></div><div style="font-weight:600;font-size:13.5px;margin:14px 0 2px">带来曝光最多的搜索关键词</div>
+      <table><tr><th style="width:8%">#</th><th>关键词</th><th style="text-align:right;width:16%">曝光</th><th style="text-align:right;width:14%">点击</th><th style="text-align:right;width:16%">平均排名</th></tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">1</td>
+          <td style="font-size:13px">double claw machine</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">77.0</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">2</td>
+          <td style="font-size:13px">double claw machine supplier</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">74.0</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">3</td>
+          <td style="font-size:13px">double play claw machine</td>
+          <td style="text-align:right;font-size:13px">2</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">38.5</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">4</td>
+          <td style="font-size:13px">double play claw machine china</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">33.0</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">5</td>
+          <td style="font-size:13px">two claw</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">2.0</td>
+        </tr></table>
+      <div style="font-weight:600;font-size:13.5px;margin:16px 0 2px">被访问最多的页面</div>
+      <table><tr><th style="width:8%">#</th><th>页面路径</th><th style="text-align:right;width:16%">浏览量</th><th style="text-align:right;width:14%">访客</th></tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">1</td>
+          <td style="font-size:13px;word-break:break-all">/</td>
+          <td style="text-align:right;font-size:13px">23</td>
+          <td style="text-align:right;font-size:13px;color:#697386">23</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">2</td>
+          <td style="font-size:13px;word-break:break-all">/products/</td>
+          <td style="text-align:right;font-size:13px">5</td>
+          <td style="text-align:right;font-size:13px;color:#697386">1</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">3</td>
+          <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center/</td>
+          <td style="text-align:right;font-size:13px">4</td>
+          <td style="text-align:right;font-size:13px;color:#697386">1</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">4</td>
+          <td style="font-size:13px;word-break:break-all">/about-us/</td>
+          <td style="text-align:right;font-size:13px">3</td>
+          <td style="text-align:right;font-size:13px;color:#697386">2</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">5</td>
+          <td style="font-size:13px;word-break:break-all">/two-claw-japanese-style-viral-gift-machine-a-new-attraction-for-modern-arcades/</td>
+          <td style="text-align:right;font-size:13px">2</td>
+          <td style="text-align:right;font-size:13px;color:#697386">1</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">6</td>
+          <td style="font-size:13px;word-break:break-all">/product/commercial-double-player-claw-catcher-two-claws-coin-operated-crane-game-prize-ofo-claw-machine-for-arcade-center-2/</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px;color:#697386">1</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">7</td>
+          <td style="font-size:13px;word-break:break-all">/product/wholesale-ofo-claw-catcher-coin-operated-arcade-prize-crane-machine-single-player-claw-game-machine-for-shopping-center/</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px;color:#697386">1</td>
+        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>24</strong> 位独立访客、<strong>27</strong> 次会话、<strong>39</strong> 次页面浏览，日均访客约 3.0 人。人均会话数为 1.13，平均会话时长 0 分 21 秒，参与会话 3 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 24 次会话、占比 89%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>26</strong> 次曝光、<strong>1</strong> 次点击，点击率 3.8%，平均排名第 34.2 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。平均排名仍在 20 位之后，说明关键词已进入索引但竞争力不足，属于典型的长尾积累期，随着同类主题文章增多，排名会逐步前移。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（23 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div><div class="ga-pane" id="gaw-yjgamefun-1" style="display:none"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>季度（滚动近 90 天）</strong>：本期 2026-08-11 至 2026-11-08，环比对象为其<strong>前一个 90 天（2026-05-13 至 2026-08-10）</strong>——同样的天数对同样的天数。以约一个季度的窗口观察整体趋势，站点起步阶段的单日波动不会被放大误读；更细的月度对比可切换到「月度」标签。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">访客数（去重用户）</div>
       <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">192<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">人</span></div>
@@ -139,7 +301,7 @@ function gaTab(btn, key, i) {
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">平均排名</div>
       <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">41.7<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">位</span></div>
       <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▼ 100.0%</span><span style="color:#8792a2"> 数值越小越靠前</span></div>
-    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　近 90 天每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
+    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　季度（近 90 天）每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
     <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">15</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">20</text><defs><linearGradient id="gdtyjgamefun-d900" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#3b82f6" stop-opacity=".22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 167.0 L61.2 149.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 95.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 113.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 131.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 113.0 L835.6 167.0 L850.8 158.0 L866.0 167.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-d900)"/><path d="M46.0 167.0 L61.2 149.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 95.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 113.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 131.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 113.0 L835.6 167.0 L850.8 158.0 L866.0 167.0" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="167.0" r="3.4" fill="#fff" stroke="#3b82f6" stroke-width="2.2"/><defs><linearGradient id="gdtyjgamefun-d901" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 167.0 L61.2 140.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 86.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 59.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 113.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 104.0 L835.6 167.0 L850.8 149.0 L866.0 167.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-d901)"/><path d="M46.0 167.0 L61.2 140.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 86.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 59.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 113.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 104.0 L835.6 167.0 L850.8 149.0 L866.0 167.0" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="167.0" r="3.4" fill="#fff" stroke="#8b5cf6" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/17</text><text x="197.9" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/28</text><text x="349.7" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/07</text><text x="501.6" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/17</text><text x="653.4" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/27</text><text x="805.3" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/04</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/08</text></svg>
@@ -201,7 +363,7 @@ function gaTab(btn, key, i) {
       </tr>
           </table>
         </td>
-      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　近 90 天每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
+      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　季度（近 90 天）每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
     <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">13</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">25</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">38</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">50</text><defs><linearGradient id="gdsyjgamefun-d900" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity=".22"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><path d="M46.0 190.4 L55.5 190.4 L65.1 190.4 L74.6 194.0 L84.1 140.0 L93.7 190.4 L103.2 186.8 L112.7 186.8 L122.3 179.6 L131.8 183.2 L141.3 183.2 L150.9 100.4 L160.4 176.0 L170.0 183.2 L179.5 186.8 L189.0 194.0 L198.6 186.8 L208.1 186.8 L217.6 114.8 L227.2 194.0 L236.7 186.8 L246.2 190.4 L255.8 172.4 L265.3 190.4 L274.8 183.2 L284.4 136.4 L293.9 183.2 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 190.4 L351.1 194.0 L360.7 158.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 176.0 L436.9 194.0 L446.5 194.0 L456.0 190.4 L465.5 190.4 L475.1 194.0 L484.6 194.0 L494.1 186.8 L503.7 190.4 L513.2 186.8 L522.7 186.8 L532.3 186.8 L541.8 190.4 L551.3 114.8 L560.9 194.0 L570.4 183.2 L580.0 190.4 L589.5 186.8 L599.0 186.8 L608.6 194.0 L618.1 194.0 L627.6 190.4 L637.2 190.4 L646.7 186.8 L656.2 150.8 L665.8 179.6 L675.3 179.6 L684.8 78.8 L694.4 186.8 L703.9 183.2 L713.4 186.8 L723.0 183.2 L732.5 172.4 L742.0 176.0 L751.6 96.8 L761.1 186.8 L770.7 179.6 L780.2 194.0 L789.7 183.2 L799.3 190.4 L808.8 194.0 L818.3 136.4 L827.9 194.0 L837.4 190.4 L846.9 186.8 L856.5 176.0 L866.0 186.8 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-d900)"/><path d="M46.0 190.4 L55.5 190.4 L65.1 190.4 L74.6 194.0 L84.1 140.0 L93.7 190.4 L103.2 186.8 L112.7 186.8 L122.3 179.6 L131.8 183.2 L141.3 183.2 L150.9 100.4 L160.4 176.0 L170.0 183.2 L179.5 186.8 L189.0 194.0 L198.6 186.8 L208.1 186.8 L217.6 114.8 L227.2 194.0 L236.7 186.8 L246.2 190.4 L255.8 172.4 L265.3 190.4 L274.8 183.2 L284.4 136.4 L293.9 183.2 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 190.4 L351.1 194.0 L360.7 158.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 176.0 L436.9 194.0 L446.5 194.0 L456.0 190.4 L465.5 190.4 L475.1 194.0 L484.6 194.0 L494.1 186.8 L503.7 190.4 L513.2 186.8 L522.7 186.8 L532.3 186.8 L541.8 190.4 L551.3 114.8 L560.9 194.0 L570.4 183.2 L580.0 190.4 L589.5 186.8 L599.0 186.8 L608.6 194.0 L618.1 194.0 L627.6 190.4 L637.2 190.4 L646.7 186.8 L656.2 150.8 L665.8 179.6 L675.3 179.6 L684.8 78.8 L694.4 186.8 L703.9 183.2 L713.4 186.8 L723.0 183.2 L732.5 172.4 L742.0 176.0 L751.6 96.8 L761.1 186.8 L770.7 179.6 L780.2 194.0 L789.7 183.2 L799.3 190.4 L808.8 194.0 L818.3 136.4 L827.9 194.0 L837.4 190.4 L846.9 186.8 L856.5 176.0 L866.0 186.8" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="186.8" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2.2"/><defs><linearGradient id="gdsyjgamefun-d901" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0e9f6e" stop-opacity=".22"/><stop offset="100%" stop-color="#0e9f6e" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L55.5 194.0 L65.1 194.0 L74.6 194.0 L84.1 194.0 L93.7 194.0 L103.2 194.0 L112.7 194.0 L122.3 194.0 L131.8 194.0 L141.3 194.0 L150.9 194.0 L160.4 194.0 L170.0 194.0 L179.5 194.0 L189.0 194.0 L198.6 194.0 L208.1 194.0 L217.6 194.0 L227.2 194.0 L236.7 194.0 L246.2 194.0 L255.8 194.0 L265.3 190.4 L274.8 194.0 L284.4 194.0 L293.9 194.0 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 194.0 L351.1 194.0 L360.7 194.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 194.0 L436.9 194.0 L446.5 194.0 L456.0 194.0 L465.5 194.0 L475.1 194.0 L484.6 194.0 L494.1 194.0 L503.7 194.0 L513.2 194.0 L522.7 194.0 L532.3 194.0 L541.8 190.4 L551.3 194.0 L560.9 194.0 L570.4 194.0 L580.0 194.0 L589.5 194.0 L599.0 194.0 L608.6 194.0 L618.1 194.0 L627.6 194.0 L637.2 194.0 L646.7 194.0 L656.2 194.0 L665.8 194.0 L675.3 194.0 L684.8 190.4 L694.4 194.0 L703.9 194.0 L713.4 194.0 L723.0 194.0 L732.5 194.0 L742.0 194.0 L751.6 194.0 L761.1 194.0 L770.7 194.0 L780.2 194.0 L789.7 194.0 L799.3 194.0 L808.8 194.0 L818.3 194.0 L827.9 194.0 L837.4 194.0 L846.9 194.0 L856.5 190.4 L866.0 194.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-d901)"/><path d="M46.0 194.0 L55.5 194.0 L65.1 194.0 L74.6 194.0 L84.1 194.0 L93.7 194.0 L103.2 194.0 L112.7 194.0 L122.3 194.0 L131.8 194.0 L141.3 194.0 L150.9 194.0 L160.4 194.0 L170.0 194.0 L179.5 194.0 L189.0 194.0 L198.6 194.0 L208.1 194.0 L217.6 194.0 L227.2 194.0 L236.7 194.0 L246.2 194.0 L255.8 194.0 L265.3 190.4 L274.8 194.0 L284.4 194.0 L293.9 194.0 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 194.0 L351.1 194.0 L360.7 194.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 194.0 L436.9 194.0 L446.5 194.0 L456.0 194.0 L465.5 194.0 L475.1 194.0 L484.6 194.0 L494.1 194.0 L503.7 194.0 L513.2 194.0 L522.7 194.0 L532.3 194.0 L541.8 190.4 L551.3 194.0 L560.9 194.0 L570.4 194.0 L580.0 194.0 L589.5 194.0 L599.0 194.0 L608.6 194.0 L618.1 194.0 L627.6 194.0 L637.2 194.0 L646.7 194.0 L656.2 194.0 L665.8 194.0 L675.3 194.0 L684.8 190.4 L694.4 194.0 L703.9 194.0 L713.4 194.0 L723.0 194.0 L732.5 194.0 L742.0 194.0 L751.6 194.0 L761.1 194.0 L770.7 194.0 L780.2 194.0 L789.7 194.0 L799.3 194.0 L808.8 194.0 L818.3 194.0 L827.9 194.0 L837.4 194.0 L846.9 194.0 L856.5 190.4 L866.0 194.0" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="194.0" r="3.4" fill="#fff" stroke="#0e9f6e" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/13</text><text x="189.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/28</text><text x="332.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/12</text><text x="475.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/27</text><text x="618.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/12</text><text x="761.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/27</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/07</text></svg>
@@ -320,40 +482,40 @@ function gaTab(btn, key, i) {
           <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center-复制/</td>
           <td style="text-align:right;font-size:13px">4</td>
           <td style="text-align:right;font-size:13px;color:#697386">4</td>
-        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>192</strong> 位独立访客、<strong>217</strong> 次会话、<strong>365</strong> 次页面浏览，日均访客约 2.1 人。人均会话数为 1.13，平均会话时长 1 分 37 秒，参与会话 51 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 179 次会话、占比 82%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>325</strong> 次曝光、<strong>4</strong> 次点击，点击率 1.2%，平均排名第 41.7 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。平均排名仍在 20 位之后，说明关键词已进入索引但竞争力不足，属于典型的长尾积累期，随着同类主题文章增多，排名会逐步前移。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（254 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div><div class="ga-pane" id="gaw-yjgamefun-1" style="display:none"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>自然月（月至今）</strong>：本期 2026-11-01 至 2026-11-08（截至报告生成日），环比对象为<strong>上月同期 2026-10-01 至 2026-10-08</strong>——即"同样的天数对同样的天数"，避免本月尚未过完时与上月整月直接相比而被误读为大幅下滑。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
+        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>192</strong> 位独立访客、<strong>217</strong> 次会话、<strong>365</strong> 次页面浏览，日均访客约 2.1 人。人均会话数为 1.13，平均会话时长 1 分 37 秒，参与会话 51 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 179 次会话、占比 82%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>325</strong> 次曝光、<strong>4</strong> 次点击，点击率 1.2%，平均排名第 41.7 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。平均排名仍在 20 位之后，说明关键词已进入索引但竞争力不足，属于典型的长尾积累期，随着同类主题文章增多，排名会逐步前移。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（254 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div><div class="ga-pane" id="gaw-yjgamefun-2" style="display:none"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>2026 年度累计（年初至今）</strong>：本期 2026-01-01 至 2026-11-08，同比对象为<strong>去年同期（2025-01-01 至 2025-11-08）</strong>。站点上线首年该口径即为全部历史数据累计，适合观察站点自上线以来的整体增长曲线。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">访客数（去重用户）</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">24<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">人</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 100.0%</span><span style="color:#8792a2"> 新访客 24</span></div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">192<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">人</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">新增</span><span style="color:#8792a2"> 新访客 193</span></div>
     </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">会话数</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">27<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 125.0%</span><span style="color:#8792a2"> 参与会话 3</span></div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">217<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">新增</span><span style="color:#8792a2"> 参与会话 51</span></div>
     </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">页面浏览量</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">39<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 254.5%</span><span style="color:#8792a2"> 人均 1.6 页</span></div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">365<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">新增</span><span style="color:#8792a2"> 人均 1.9 页</span></div>
     </div></td></tr><tr><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索曝光</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">26<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▼ 21.2%</span><span style="color:#8792a2"> 覆盖关键词 5 个</span></div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">325<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">新增</span><span style="color:#8792a2"> 覆盖关键词 10 个</span></div>
     </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索点击</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">1<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#8792a2;font-weight:600">0.0%</span><span style="color:#8792a2"> 点击率 3.8%</span></div>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">4<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">新增</span><span style="color:#8792a2"> 点击率 1.2%</span></div>
     </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
     <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
       <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">平均排名</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">34.2<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">位</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▲ 37.5%</span><span style="color:#8792a2"> 数值越小越靠前</span></div>
-    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　本月月至今每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
-    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">3</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">8</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><defs><linearGradient id="gdtyjgamefun-mtd0" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 158.0 L210.0 122.0 L374.0 32.0 L538.0 140.0 L702.0 122.0 L866.0 140.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-mtd0)"/><path d="M46.0 158.0 L210.0 122.0 L374.0 32.0 L538.0 140.0 L702.0 122.0 L866.0 140.0" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="140.0" r="3.4" fill="#fff" stroke="#3b82f6" stroke-width="2.2"/><defs><linearGradient id="gdtyjgamefun-mtd1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 158.0 L210.0 122.0 L374.0 14.0 L538.0 140.0 L702.0 104.0 L866.0 140.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-mtd1)"/><path d="M46.0 158.0 L210.0 122.0 L374.0 14.0 L538.0 140.0 L702.0 104.0 L866.0 140.0" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="140.0" r="3.4" fill="#fff" stroke="#8b5cf6" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/03</text><text x="210.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/04</text><text x="374.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/05</text><text x="538.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/06</text><text x="702.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/07</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/08</text></svg>
+      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">41.7<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">位</span></div>
+      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▼ 100.0%</span><span style="color:#8792a2"> 数值越小越靠前</span></div>
+    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　年度（年初至今）每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
+    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">15</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">20</text><defs><linearGradient id="gdtyjgamefun-ytd0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 167.0 L61.2 149.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 95.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 113.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 131.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 113.0 L835.6 167.0 L850.8 158.0 L866.0 167.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-ytd0)"/><path d="M46.0 167.0 L61.2 149.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 95.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 113.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 131.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 113.0 L835.6 167.0 L850.8 158.0 L866.0 167.0" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="167.0" r="3.4" fill="#fff" stroke="#3b82f6" stroke-width="2.2"/><defs><linearGradient id="gdtyjgamefun-ytd1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 167.0 L61.2 140.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 86.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 59.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 113.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 104.0 L835.6 167.0 L850.8 149.0 L866.0 167.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-ytd1)"/><path d="M46.0 167.0 L61.2 140.0 L76.4 167.0 L91.6 185.0 L106.7 149.0 L121.9 158.0 L137.1 185.0 L152.3 185.0 L167.5 185.0 L182.7 149.0 L197.9 140.0 L213.0 149.0 L228.2 185.0 L243.4 167.0 L258.6 176.0 L273.8 122.0 L289.0 86.0 L304.1 122.0 L319.3 167.0 L334.5 158.0 L349.7 149.0 L364.9 149.0 L380.1 158.0 L395.3 158.0 L410.4 149.0 L425.6 176.0 L440.8 158.0 L456.0 167.0 L471.2 176.0 L486.4 167.0 L501.6 185.0 L516.7 149.0 L531.9 167.0 L547.1 176.0 L562.3 176.0 L577.5 59.0 L592.7 176.0 L607.9 86.0 L623.0 158.0 L638.2 185.0 L653.4 185.0 L668.6 185.0 L683.8 185.0 L699.0 113.0 L714.1 149.0 L729.3 185.0 L744.5 176.0 L759.7 167.0 L774.9 185.0 L790.1 176.0 L805.3 158.0 L820.4 104.0 L835.6 167.0 L850.8 149.0 L866.0 167.0" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="167.0" r="3.4" fill="#fff" stroke="#8b5cf6" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/17</text><text x="197.9" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/28</text><text x="349.7" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/07</text><text x="501.6" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/17</text><text x="653.4" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/27</text><text x="805.3" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/04</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/08</text></svg>
     <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
       <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#3b82f6"></i>访客数</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
       <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#8b5cf6"></i>会话数</span></div></div><table style="width:100%;border-collapse:separate;border-spacing:8px 0;margin:4px 0 8px">
@@ -364,312 +526,19 @@ function gaTab(btn, key, i) {
             <tr><th style="font-size:12px">渠道</th><th style="font-size:12px;text-align:right">会话</th><th style="font-size:12px;text-align:right">占比</th></tr>
             <tr>
         <td style="font-size:13px">直接访问</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">24</td>
-        <td style="text-align:right;font-size:13px;color:#697386">89%</td>
-      </tr><tr>
-        <td style="font-size:13px">自然搜索</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">3</td>
-        <td style="text-align:right;font-size:13px;color:#697386">11%</td>
-      </tr>
-          </table>
-        </td>
-        <td style="width:42%;vertical-align:top;border:1px solid #e3e8ef;border-radius:8px;padding:12px 14px">
-          <div style="font-weight:600;font-size:13.5px;margin-bottom:6px">访客国家 / 地区分布</div>
-          <table style="width:100%;border-collapse:collapse">
-            <tr><th style="font-size:12px">国家/地区</th><th style="font-size:12px;text-align:right">会话</th></tr>
-            <tr>
-        <td style="font-size:13px">China</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">21</td>
-      </tr><tr>
-        <td style="font-size:13px">Vietnam</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">5</td>
-      </tr><tr>
-        <td style="font-size:13px">Taiwan</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
-      </tr>
-          </table>
-        </td>
-      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　本月月至今每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
-    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">15</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">20</text><defs><linearGradient id="gdsyjgamefun-mtd0" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity=".22"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L182.7 50.0 L319.3 194.0 L456.0 185.0 L592.7 176.0 L729.3 149.0 L866.0 176.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-mtd0)"/><path d="M46.0 194.0 L182.7 50.0 L319.3 194.0 L456.0 185.0 L592.7 176.0 L729.3 149.0 L866.0 176.0" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="176.0" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2.2"/><defs><linearGradient id="gdsyjgamefun-mtd1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0e9f6e" stop-opacity=".22"/><stop offset="100%" stop-color="#0e9f6e" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L182.7 194.0 L319.3 194.0 L456.0 194.0 L592.7 194.0 L729.3 185.0 L866.0 194.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-mtd1)"/><path d="M46.0 194.0 L182.7 194.0 L319.3 194.0 L456.0 194.0 L592.7 194.0 L729.3 185.0 L866.0 194.0" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="194.0" r="3.4" fill="#fff" stroke="#0e9f6e" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/01</text><text x="319.3" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/03</text><text x="592.7" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/05</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/07</text></svg>
-    <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#f59e0b"></i>曝光量</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#0e9f6e"></i>点击量</span></div></div><div style="font-weight:600;font-size:13.5px;margin:14px 0 2px">带来曝光最多的搜索关键词</div>
-      <table><tr><th style="width:8%">#</th><th>关键词</th><th style="text-align:right;width:16%">曝光</th><th style="text-align:right;width:14%">点击</th><th style="text-align:right;width:16%">平均排名</th></tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">1</td>
-          <td style="font-size:13px">double claw machine</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">77.0</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">2</td>
-          <td style="font-size:13px">double claw machine supplier</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">74.0</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">3</td>
-          <td style="font-size:13px">double play claw machine</td>
-          <td style="text-align:right;font-size:13px">2</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">38.5</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">4</td>
-          <td style="font-size:13px">double play claw machine china</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">33.0</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">5</td>
-          <td style="font-size:13px">two claw</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">2.0</td>
-        </tr></table>
-      <div style="font-weight:600;font-size:13.5px;margin:16px 0 2px">被访问最多的页面</div>
-      <table><tr><th style="width:8%">#</th><th>页面路径</th><th style="text-align:right;width:16%">浏览量</th><th style="text-align:right;width:14%">访客</th></tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">1</td>
-          <td style="font-size:13px;word-break:break-all">/</td>
-          <td style="text-align:right;font-size:13px">23</td>
-          <td style="text-align:right;font-size:13px;color:#697386">23</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">2</td>
-          <td style="font-size:13px;word-break:break-all">/products/</td>
-          <td style="text-align:right;font-size:13px">5</td>
-          <td style="text-align:right;font-size:13px;color:#697386">1</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">3</td>
-          <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center/</td>
-          <td style="text-align:right;font-size:13px">4</td>
-          <td style="text-align:right;font-size:13px;color:#697386">1</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">4</td>
-          <td style="font-size:13px;word-break:break-all">/about-us/</td>
-          <td style="text-align:right;font-size:13px">3</td>
-          <td style="text-align:right;font-size:13px;color:#697386">2</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">5</td>
-          <td style="font-size:13px;word-break:break-all">/two-claw-japanese-style-viral-gift-machine-a-new-attraction-for-modern-arcades/</td>
-          <td style="text-align:right;font-size:13px">2</td>
-          <td style="text-align:right;font-size:13px;color:#697386">1</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">6</td>
-          <td style="font-size:13px;word-break:break-all">/product/commercial-double-player-claw-catcher-two-claws-coin-operated-crane-game-prize-ofo-claw-machine-for-arcade-center-2/</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px;color:#697386">1</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">7</td>
-          <td style="font-size:13px;word-break:break-all">/product/wholesale-ofo-claw-catcher-coin-operated-arcade-prize-crane-machine-single-player-claw-game-machine-for-shopping-center/</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px;color:#697386">1</td>
-        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>24</strong> 位独立访客、<strong>27</strong> 次会话、<strong>39</strong> 次页面浏览，日均访客约 3.0 人。人均会话数为 1.13，平均会话时长 0 分 21 秒，参与会话 3 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 24 次会话、占比 89%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>26</strong> 次曝光、<strong>1</strong> 次点击，点击率 3.8%，平均排名第 34.2 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。平均排名仍在 20 位之后，说明关键词已进入索引但竞争力不足，属于典型的长尾积累期，随着同类主题文章增多，排名会逐步前移。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（23 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div><div class="ga-pane" id="gaw-yjgamefun-2" style="display:none"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>上一个完整自然月（2026年10月）</strong>：2026-10-01 至 2026-10-31，环比对象为上上月（2026-09-01 至 2026-09-30）。两侧均为完整月份，环比结论最具参考性。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">访客数（去重用户）</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">12<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">人</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▼ 89.6%</span><span style="color:#8792a2"> 新访客 11</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">会话数</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">12<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▼ 91.0%</span><span style="color:#8792a2"> 参与会话 0</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">页面浏览量</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">11<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▼ 95.5%</span><span style="color:#8792a2"> 人均 0.9 页</span></div>
-    </div></td></tr><tr><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索曝光</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">151<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 184.9%</span><span style="color:#8792a2"> 覆盖关键词 10 个</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索点击</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">2<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 100.0%</span><span style="color:#8792a2"> 点击率 1.3%</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">平均排名</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">40.4<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">位</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▼ 15.5%</span><span style="color:#8792a2"> 数值越小越靠前</span></div>
-    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　上月 2026-10每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
-    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">1</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">3</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">4</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><defs><linearGradient id="gdtyjgamefun-last0" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 14.0 L251.0 158.0 L456.0 122.0 L661.0 86.0 L866.0 158.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-last0)"/><path d="M46.0 14.0 L251.0 158.0 L456.0 122.0 L661.0 86.0 L866.0 158.0" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="158.0" r="3.4" fill="#fff" stroke="#3b82f6" stroke-width="2.2"/><defs><linearGradient id="gdtyjgamefun-last1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 14.0 L251.0 158.0 L456.0 122.0 L661.0 86.0 L866.0 158.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-last1)"/><path d="M46.0 14.0 L251.0 158.0 L456.0 122.0 L661.0 86.0 L866.0 158.0" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="158.0" r="3.4" fill="#fff" stroke="#8b5cf6" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/03</text><text x="251.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/04</text><text x="456.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/05</text><text x="661.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/06</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/07</text></svg>
-    <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#3b82f6"></i>访客数</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#8b5cf6"></i>会话数</span></div></div><table style="width:100%;border-collapse:separate;border-spacing:8px 0;margin:4px 0 8px">
-      <tr>
-        <td style="width:58%;vertical-align:top;border:1px solid #e3e8ef;border-radius:8px;padding:12px 14px">
-          <div style="font-weight:600;font-size:13.5px;margin-bottom:6px">流量渠道结构（按会话）</div>
-          <table style="width:100%;border-collapse:collapse">
-            <tr><th style="font-size:12px">渠道</th><th style="font-size:12px;text-align:right">会话</th><th style="font-size:12px;text-align:right">占比</th></tr>
-            <tr>
-        <td style="font-size:13px">直接访问</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">6</td>
-        <td style="text-align:right;font-size:13px;color:#697386">50%</td>
-      </tr><tr>
-        <td style="font-size:13px">自然搜索</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">5</td>
-        <td style="text-align:right;font-size:13px;color:#697386">42%</td>
-      </tr><tr>
-        <td style="font-size:13px">未归类</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
-        <td style="text-align:right;font-size:13px;color:#697386">8%</td>
-      </tr>
-          </table>
-        </td>
-        <td style="width:42%;vertical-align:top;border:1px solid #e3e8ef;border-radius:8px;padding:12px 14px">
-          <div style="font-weight:600;font-size:13.5px;margin-bottom:6px">访客国家 / 地区分布</div>
-          <table style="width:100%;border-collapse:collapse">
-            <tr><th style="font-size:12px">国家/地区</th><th style="font-size:12px;text-align:right">会话</th></tr>
-            <tr>
-        <td style="font-size:13px">United States</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">9</td>
-      </tr><tr>
-        <td style="font-size:13px">(not set)</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
-      </tr><tr>
-        <td style="font-size:13px">China</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
-      </tr><tr>
-        <td style="font-size:13px">Germany</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
-      </tr>
-          </table>
-        </td>
-      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　上月 2026-10每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
-    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">13</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">25</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">38</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">50</text><defs><linearGradient id="gdsyjgamefun-last0" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity=".22"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><path d="M46.0 186.8 L73.3 186.8 L100.7 186.8 L128.0 190.4 L155.3 114.8 L182.7 194.0 L210.0 183.2 L237.3 190.4 L264.7 186.8 L292.0 186.8 L319.3 194.0 L346.7 194.0 L374.0 190.4 L401.3 190.4 L428.7 186.8 L456.0 150.8 L483.3 179.6 L510.7 179.6 L538.0 78.8 L565.3 186.8 L592.7 183.2 L620.0 186.8 L647.3 183.2 L674.7 172.4 L702.0 176.0 L729.3 96.8 L756.7 186.8 L784.0 179.6 L811.3 194.0 L838.7 183.2 L866.0 190.4 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-last0)"/><path d="M46.0 186.8 L73.3 186.8 L100.7 186.8 L128.0 190.4 L155.3 114.8 L182.7 194.0 L210.0 183.2 L237.3 190.4 L264.7 186.8 L292.0 186.8 L319.3 194.0 L346.7 194.0 L374.0 190.4 L401.3 190.4 L428.7 186.8 L456.0 150.8 L483.3 179.6 L510.7 179.6 L538.0 78.8 L565.3 186.8 L592.7 183.2 L620.0 186.8 L647.3 183.2 L674.7 172.4 L702.0 176.0 L729.3 96.8 L756.7 186.8 L784.0 179.6 L811.3 194.0 L838.7 183.2 L866.0 190.4" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="190.4" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2.2"/><defs><linearGradient id="gdsyjgamefun-last1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0e9f6e" stop-opacity=".22"/><stop offset="100%" stop-color="#0e9f6e" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L73.3 194.0 L100.7 194.0 L128.0 190.4 L155.3 194.0 L182.7 194.0 L210.0 194.0 L237.3 194.0 L264.7 194.0 L292.0 194.0 L319.3 194.0 L346.7 194.0 L374.0 194.0 L401.3 194.0 L428.7 194.0 L456.0 194.0 L483.3 194.0 L510.7 194.0 L538.0 190.4 L565.3 194.0 L592.7 194.0 L620.0 194.0 L647.3 194.0 L674.7 194.0 L702.0 194.0 L729.3 194.0 L756.7 194.0 L784.0 194.0 L811.3 194.0 L838.7 194.0 L866.0 194.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-last1)"/><path d="M46.0 194.0 L73.3 194.0 L100.7 194.0 L128.0 190.4 L155.3 194.0 L182.7 194.0 L210.0 194.0 L237.3 194.0 L264.7 194.0 L292.0 194.0 L319.3 194.0 L346.7 194.0 L374.0 194.0 L401.3 194.0 L428.7 194.0 L456.0 194.0 L483.3 194.0 L510.7 194.0 L538.0 190.4 L565.3 194.0 L592.7 194.0 L620.0 194.0 L647.3 194.0 L674.7 194.0 L702.0 194.0 L729.3 194.0 L756.7 194.0 L784.0 194.0 L811.3 194.0 L838.7 194.0 L866.0 194.0" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="194.0" r="3.4" fill="#fff" stroke="#0e9f6e" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/01</text><text x="210.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/07</text><text x="374.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/13</text><text x="538.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/19</text><text x="702.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/25</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/31</text></svg>
-    <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#f59e0b"></i>曝光量</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#0e9f6e"></i>点击量</span></div></div><div style="font-weight:600;font-size:13.5px;margin:14px 0 2px">带来曝光最多的搜索关键词</div>
-      <table><tr><th style="width:8%">#</th><th>关键词</th><th style="text-align:right;width:16%">曝光</th><th style="text-align:right;width:14%">点击</th><th style="text-align:right;width:16%">平均排名</th></tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">1</td>
-          <td style="font-size:13px">double claw machine</td>
-          <td style="text-align:right;font-size:13px">5</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px;color:#697386">46.4</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">2</td>
-          <td style="font-size:13px">2 claw</td>
-          <td style="text-align:right;font-size:13px">2</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">50.5</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">3</td>
-          <td style="font-size:13px">doble claw</td>
-          <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">97.0</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">4</td>
-          <td style="font-size:13px">double claw machine china</td>
-          <td style="text-align:right;font-size:13px">5</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">55.6</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">5</td>
-          <td style="font-size:13px">double claw machine factory</td>
-          <td style="text-align:right;font-size:13px">2</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">54.0</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">6</td>
-          <td style="font-size:13px">double play claw machine</td>
-          <td style="text-align:right;font-size:13px">8</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">51.1</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">7</td>
-          <td style="font-size:13px">double play claw machine china</td>
-          <td style="text-align:right;font-size:13px">7</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">37.3</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">8</td>
-          <td style="font-size:13px">double play claw machine exporter</td>
-          <td style="text-align:right;font-size:13px">2</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">61.5</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">9</td>
-          <td style="font-size:13px">double play claw machine factory</td>
-          <td style="text-align:right;font-size:13px">4</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">52.8</td>
-        </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">10</td>
-          <td style="font-size:13px">double play claw machine manufacturer</td>
-          <td style="text-align:right;font-size:13px">2</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">66.0</td>
-        </tr></table>
-      <div style="font-weight:600;font-size:13.5px;margin:16px 0 2px">被访问最多的页面</div>
-      <table><tr><th style="width:8%">#</th><th>页面路径</th><th style="text-align:right;width:16%">浏览量</th><th style="text-align:right;width:14%">访客</th></tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">1</td>
-          <td style="font-size:13px;word-break:break-all">/</td>
-          <td style="text-align:right;font-size:13px">11</td>
-          <td style="text-align:right;font-size:13px;color:#697386">12</td>
-        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>12</strong> 位独立访客、<strong>12</strong> 次会话、<strong>11</strong> 次页面浏览，日均访客约 0.4 人。人均会话数为 1.00，平均会话时长 —，参与会话 0 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 6 次会话、占比 50%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>151</strong> 次曝光、<strong>2</strong> 次点击，点击率 1.3%，平均排名第 40.4 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。曝光已具备一定规模但点击极低，问题不在收录而在「呈现」——标题与元描述缺乏点击理由，建议对高曝光低点击的页面重写 title/meta description，把产品型号、交期、定制能力等决策关键词前置。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（11 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div><div class="ga-pane" id="gaw-yjgamefun-3" style="display:none"><p>本节数据直接取自 <strong>Google Analytics 4</strong>（站点流量与用户行为）与 <strong>Google Search Console</strong>（Google 搜索曝光、点击与收录）两大官方数据源，通过服务账号授权由系统自动拉取，无需人工导出或截图，数据与站点后台实时一致。统计口径为<strong>上上月（2026年9月，完整自然月）</strong>：2026-09-01 至 2026-09-30，环比对象为其前一月（2026-08-01 至 2026-08-31）。 另需说明，Search Console 的搜索数据存在约 2~3 天的官方延迟，因此最近两天的曝光与点击会略低于实际发生值，属正常现象，不影响趋势判断。</p><table style="width:100%;border-collapse:separate;border-spacing:0;margin:6px 0 18px"><tr><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">访客数（去重用户）</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">115<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">人</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 167.4%</span><span style="color:#8792a2"> 新访客 114</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">会话数</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">133<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 195.6%</span><span style="color:#8792a2"> 参与会话 33</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">页面浏览量</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">242<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">▲ 231.5%</span><span style="color:#8792a2"> 人均 2.1 页</span></div>
-    </div></td></tr><tr><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索曝光</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">53<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▼ 44.2%</span><span style="color:#8792a2"> 覆盖关键词 2 个</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">搜索点击</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">1<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">次</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#0e9f6e;font-weight:600">新增</span><span style="color:#8792a2"> 点击率 1.9%</span></div>
-    </div></td><td style="width:33.33%;padding:6px;vertical-align:top">
-    <div style="background:#f8fafc;border:1px solid #e3e8ef;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px">
-      <div style="font-size:12.5px;color:#697386;letter-spacing:.3px">平均排名</div>
-      <div style="font-size:27px;font-weight:700;color:#0a2540;line-height:1.25;margin-top:2px">34.1<span style="font-size:13px;font-weight:400;color:#8792a2;margin-left:3px">位</span></div>
-      <div style="font-size:12.5px;margin-top:2px"><span style="color:#e02424;font-weight:600">▲ 46.7%</span><span style="color:#8792a2"> 数值越小越靠前</span></div>
-    </div></td></tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 1　上上月 2026-09每日访客与会话走势（GA4）</p><div style="margin:6px 0 4px">
-    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">15</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">20</text><defs><linearGradient id="gdtyjgamefun-last20" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 176.0 L74.3 122.0 L102.6 95.0 L130.8 122.0 L159.1 167.0 L187.4 158.0 L215.7 149.0 L243.9 149.0 L272.2 158.0 L300.5 158.0 L328.8 149.0 L357.0 176.0 L385.3 158.0 L413.6 167.0 L441.9 176.0 L470.1 167.0 L498.4 185.0 L526.7 149.0 L555.0 167.0 L583.2 176.0 L611.5 176.0 L639.8 113.0 L668.1 176.0 L696.3 86.0 L724.6 158.0 L752.9 185.0 L781.2 185.0 L809.4 185.0 L837.7 185.0 L866.0 131.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-last20)"/><path d="M46.0 176.0 L74.3 122.0 L102.6 95.0 L130.8 122.0 L159.1 167.0 L187.4 158.0 L215.7 149.0 L243.9 149.0 L272.2 158.0 L300.5 158.0 L328.8 149.0 L357.0 176.0 L385.3 158.0 L413.6 167.0 L441.9 176.0 L470.1 167.0 L498.4 185.0 L526.7 149.0 L555.0 167.0 L583.2 176.0 L611.5 176.0 L639.8 113.0 L668.1 176.0 L696.3 86.0 L724.6 158.0 L752.9 185.0 L781.2 185.0 L809.4 185.0 L837.7 185.0 L866.0 131.0" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="131.0" r="3.4" fill="#fff" stroke="#3b82f6" stroke-width="2.2"/><defs><linearGradient id="gdtyjgamefun-last21" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path d="M46.0 176.0 L74.3 122.0 L102.6 86.0 L130.8 122.0 L159.1 167.0 L187.4 158.0 L215.7 149.0 L243.9 149.0 L272.2 158.0 L300.5 158.0 L328.8 149.0 L357.0 176.0 L385.3 158.0 L413.6 167.0 L441.9 176.0 L470.1 167.0 L498.4 185.0 L526.7 149.0 L555.0 167.0 L583.2 176.0 L611.5 176.0 L639.8 59.0 L668.1 176.0 L696.3 86.0 L724.6 158.0 L752.9 185.0 L781.2 185.0 L809.4 185.0 L837.7 185.0 L866.0 113.0 L866.0 194 L46.0 194 Z" fill="url(#gdtyjgamefun-last21)"/><path d="M46.0 176.0 L74.3 122.0 L102.6 86.0 L130.8 122.0 L159.1 167.0 L187.4 158.0 L215.7 149.0 L243.9 149.0 L272.2 158.0 L300.5 158.0 L328.8 149.0 L357.0 176.0 L385.3 158.0 L413.6 167.0 L441.9 176.0 L470.1 167.0 L498.4 185.0 L526.7 149.0 L555.0 167.0 L583.2 176.0 L611.5 176.0 L639.8 59.0 L668.1 176.0 L696.3 86.0 L724.6 158.0 L752.9 185.0 L781.2 185.0 L809.4 185.0 L837.7 185.0 L866.0 113.0" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="113.0" r="3.4" fill="#fff" stroke="#8b5cf6" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/01</text><text x="187.4" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/06</text><text x="328.8" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/11</text><text x="470.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/16</text><text x="611.5" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/21</text><text x="752.9" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/26</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/30</text></svg>
-    <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#3b82f6"></i>访客数</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
-      <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#8b5cf6"></i>会话数</span></div></div><table style="width:100%;border-collapse:separate;border-spacing:8px 0;margin:4px 0 8px">
-      <tr>
-        <td style="width:58%;vertical-align:top;border:1px solid #e3e8ef;border-radius:8px;padding:12px 14px">
-          <div style="font-weight:600;font-size:13.5px;margin-bottom:6px">流量渠道结构（按会话）</div>
-          <table style="width:100%;border-collapse:collapse">
-            <tr><th style="font-size:12px">渠道</th><th style="font-size:12px;text-align:right">会话</th><th style="font-size:12px;text-align:right">占比</th></tr>
-            <tr>
-        <td style="font-size:13px">直接访问</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">111</td>
-        <td style="text-align:right;font-size:13px;color:#697386">83%</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">179</td>
+        <td style="text-align:right;font-size:13px;color:#697386">82%</td>
       </tr><tr>
         <td style="font-size:13px">外部推荐</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">17</td>
-        <td style="text-align:right;font-size:13px;color:#697386">13%</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">24</td>
+        <td style="text-align:right;font-size:13px;color:#697386">11%</td>
       </tr><tr>
         <td style="font-size:13px">自然搜索</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">4</td>
-        <td style="text-align:right;font-size:13px;color:#697386">3%</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">12</td>
+        <td style="text-align:right;font-size:13px;color:#697386">6%</td>
       </tr><tr>
         <td style="font-size:13px">未归类</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">1</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">2</td>
         <td style="text-align:right;font-size:13px;color:#697386">1%</td>
       </tr>
           </table>
@@ -680,18 +549,21 @@ function gaTab(btn, key, i) {
             <tr><th style="font-size:12px">国家/地区</th><th style="font-size:12px;text-align:right">会话</th></tr>
             <tr>
         <td style="font-size:13px">China</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">89</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">143</td>
       </tr><tr>
         <td style="font-size:13px">United States</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">30</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">48</td>
       </tr><tr>
         <td style="font-size:13px">(not set)</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">6</td>
+      </tr><tr>
+        <td style="font-size:13px">Vietnam</td>
         <td style="text-align:right;font-size:13px;font-weight:600">5</td>
       </tr><tr>
-        <td style="font-size:13px">France</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">2</td>
-      </tr><tr>
         <td style="font-size:13px">Germany</td>
+        <td style="text-align:right;font-size:13px;font-weight:600">4</td>
+      </tr><tr>
+        <td style="font-size:13px">France</td>
         <td style="text-align:right;font-size:13px;font-weight:600">2</td>
       </tr><tr>
         <td style="font-size:13px">Ireland</td>
@@ -699,114 +571,236 @@ function gaTab(btn, key, i) {
       </tr><tr>
         <td style="font-size:13px">Poland</td>
         <td style="text-align:right;font-size:13px;font-weight:600">2</td>
-      </tr><tr>
-        <td style="font-size:13px">Singapore</td>
-        <td style="text-align:right;font-size:13px;font-weight:600">2</td>
       </tr>
           </table>
         </td>
-      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　上上月 2026-09每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
-    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">5</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">10</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">15</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">20</text><defs><linearGradient id="gdsyjgamefun-last20" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity=".22"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L74.3 176.0 L102.6 185.0 L130.8 140.0 L159.1 185.0 L187.4 167.0 L215.7 50.0 L243.9 167.0 L272.2 194.0 L300.5 194.0 L328.8 194.0 L357.0 194.0 L385.3 185.0 L413.6 194.0 L441.9 104.0 L470.1 194.0 L498.4 194.0 L526.7 194.0 L555.0 194.0 L583.2 194.0 L611.5 194.0 L639.8 149.0 L668.1 194.0 L696.3 194.0 L724.6 185.0 L752.9 185.0 L781.2 194.0 L809.4 194.0 L837.7 176.0 L866.0 185.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-last20)"/><path d="M46.0 194.0 L74.3 176.0 L102.6 185.0 L130.8 140.0 L159.1 185.0 L187.4 167.0 L215.7 50.0 L243.9 167.0 L272.2 194.0 L300.5 194.0 L328.8 194.0 L357.0 194.0 L385.3 185.0 L413.6 194.0 L441.9 104.0 L470.1 194.0 L498.4 194.0 L526.7 194.0 L555.0 194.0 L583.2 194.0 L611.5 194.0 L639.8 149.0 L668.1 194.0 L696.3 194.0 L724.6 185.0 L752.9 185.0 L781.2 194.0 L809.4 194.0 L837.7 176.0 L866.0 185.0" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="185.0" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2.2"/><defs><linearGradient id="gdsyjgamefun-last21" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0e9f6e" stop-opacity=".22"/><stop offset="100%" stop-color="#0e9f6e" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L74.3 194.0 L102.6 194.0 L130.8 194.0 L159.1 185.0 L187.4 194.0 L215.7 194.0 L243.9 194.0 L272.2 194.0 L300.5 194.0 L328.8 194.0 L357.0 194.0 L385.3 194.0 L413.6 194.0 L441.9 194.0 L470.1 194.0 L498.4 194.0 L526.7 194.0 L555.0 194.0 L583.2 194.0 L611.5 194.0 L639.8 194.0 L668.1 194.0 L696.3 194.0 L724.6 194.0 L752.9 194.0 L781.2 194.0 L809.4 194.0 L837.7 194.0 L866.0 194.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-last21)"/><path d="M46.0 194.0 L74.3 194.0 L102.6 194.0 L130.8 194.0 L159.1 185.0 L187.4 194.0 L215.7 194.0 L243.9 194.0 L272.2 194.0 L300.5 194.0 L328.8 194.0 L357.0 194.0 L385.3 194.0 L413.6 194.0 L441.9 194.0 L470.1 194.0 L498.4 194.0 L526.7 194.0 L555.0 194.0 L583.2 194.0 L611.5 194.0 L639.8 194.0 L668.1 194.0 L696.3 194.0 L724.6 194.0 L752.9 194.0 L781.2 194.0 L809.4 194.0 L837.7 194.0 L866.0 194.0" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="194.0" r="3.4" fill="#fff" stroke="#0e9f6e" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/01</text><text x="187.4" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/06</text><text x="328.8" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/11</text><text x="470.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/16</text><text x="611.5" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/21</text><text x="752.9" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/26</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/30</text></svg>
+      </tr></table><p style="font-weight:600;color:#0a2540;margin-bottom:0">图 2　年度（年初至今）每日 Google 搜索曝光与点击走势（Search Console）</p><div style="margin:6px 0 4px">
+    <svg viewBox="0 0 880 220" style="width:100%;height:auto;display:block"><line x1="46" y1="194.0" x2="866" y2="194.0" stroke="#eef1f6"/><text x="38" y="197.5" text-anchor="end" font-size="10" fill="#9aa5b1">0</text><line x1="46" y1="149.0" x2="866" y2="149.0" stroke="#eef1f6"/><text x="38" y="152.5" text-anchor="end" font-size="10" fill="#9aa5b1">13</text><line x1="46" y1="104.0" x2="866" y2="104.0" stroke="#eef1f6"/><text x="38" y="107.5" text-anchor="end" font-size="10" fill="#9aa5b1">25</text><line x1="46" y1="59.0" x2="866" y2="59.0" stroke="#eef1f6"/><text x="38" y="62.5" text-anchor="end" font-size="10" fill="#9aa5b1">38</text><line x1="46" y1="14.0" x2="866" y2="14.0" stroke="#eef1f6"/><text x="38" y="17.5" text-anchor="end" font-size="10" fill="#9aa5b1">50</text><defs><linearGradient id="gdsyjgamefun-ytd0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity=".22"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><path d="M46.0 190.4 L55.5 190.4 L65.1 190.4 L74.6 194.0 L84.1 140.0 L93.7 190.4 L103.2 186.8 L112.7 186.8 L122.3 179.6 L131.8 183.2 L141.3 183.2 L150.9 100.4 L160.4 176.0 L170.0 183.2 L179.5 186.8 L189.0 194.0 L198.6 186.8 L208.1 186.8 L217.6 114.8 L227.2 194.0 L236.7 186.8 L246.2 190.4 L255.8 172.4 L265.3 190.4 L274.8 183.2 L284.4 136.4 L293.9 183.2 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 190.4 L351.1 194.0 L360.7 158.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 176.0 L436.9 194.0 L446.5 194.0 L456.0 190.4 L465.5 190.4 L475.1 194.0 L484.6 194.0 L494.1 186.8 L503.7 190.4 L513.2 186.8 L522.7 186.8 L532.3 186.8 L541.8 190.4 L551.3 114.8 L560.9 194.0 L570.4 183.2 L580.0 190.4 L589.5 186.8 L599.0 186.8 L608.6 194.0 L618.1 194.0 L627.6 190.4 L637.2 190.4 L646.7 186.8 L656.2 150.8 L665.8 179.6 L675.3 179.6 L684.8 78.8 L694.4 186.8 L703.9 183.2 L713.4 186.8 L723.0 183.2 L732.5 172.4 L742.0 176.0 L751.6 96.8 L761.1 186.8 L770.7 179.6 L780.2 194.0 L789.7 183.2 L799.3 190.4 L808.8 194.0 L818.3 136.4 L827.9 194.0 L837.4 190.4 L846.9 186.8 L856.5 176.0 L866.0 186.8 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-ytd0)"/><path d="M46.0 190.4 L55.5 190.4 L65.1 190.4 L74.6 194.0 L84.1 140.0 L93.7 190.4 L103.2 186.8 L112.7 186.8 L122.3 179.6 L131.8 183.2 L141.3 183.2 L150.9 100.4 L160.4 176.0 L170.0 183.2 L179.5 186.8 L189.0 194.0 L198.6 186.8 L208.1 186.8 L217.6 114.8 L227.2 194.0 L236.7 186.8 L246.2 190.4 L255.8 172.4 L265.3 190.4 L274.8 183.2 L284.4 136.4 L293.9 183.2 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 190.4 L351.1 194.0 L360.7 158.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 176.0 L436.9 194.0 L446.5 194.0 L456.0 190.4 L465.5 190.4 L475.1 194.0 L484.6 194.0 L494.1 186.8 L503.7 190.4 L513.2 186.8 L522.7 186.8 L532.3 186.8 L541.8 190.4 L551.3 114.8 L560.9 194.0 L570.4 183.2 L580.0 190.4 L589.5 186.8 L599.0 186.8 L608.6 194.0 L618.1 194.0 L627.6 190.4 L637.2 190.4 L646.7 186.8 L656.2 150.8 L665.8 179.6 L675.3 179.6 L684.8 78.8 L694.4 186.8 L703.9 183.2 L713.4 186.8 L723.0 183.2 L732.5 172.4 L742.0 176.0 L751.6 96.8 L761.1 186.8 L770.7 179.6 L780.2 194.0 L789.7 183.2 L799.3 190.4 L808.8 194.0 L818.3 136.4 L827.9 194.0 L837.4 190.4 L846.9 186.8 L856.5 176.0 L866.0 186.8" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="186.8" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2.2"/><defs><linearGradient id="gdsyjgamefun-ytd1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e9f6e" stop-opacity=".22"/><stop offset="100%" stop-color="#0e9f6e" stop-opacity="0"/></linearGradient></defs><path d="M46.0 194.0 L55.5 194.0 L65.1 194.0 L74.6 194.0 L84.1 194.0 L93.7 194.0 L103.2 194.0 L112.7 194.0 L122.3 194.0 L131.8 194.0 L141.3 194.0 L150.9 194.0 L160.4 194.0 L170.0 194.0 L179.5 194.0 L189.0 194.0 L198.6 194.0 L208.1 194.0 L217.6 194.0 L227.2 194.0 L236.7 194.0 L246.2 194.0 L255.8 194.0 L265.3 190.4 L274.8 194.0 L284.4 194.0 L293.9 194.0 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 194.0 L351.1 194.0 L360.7 194.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 194.0 L436.9 194.0 L446.5 194.0 L456.0 194.0 L465.5 194.0 L475.1 194.0 L484.6 194.0 L494.1 194.0 L503.7 194.0 L513.2 194.0 L522.7 194.0 L532.3 194.0 L541.8 190.4 L551.3 194.0 L560.9 194.0 L570.4 194.0 L580.0 194.0 L589.5 194.0 L599.0 194.0 L608.6 194.0 L618.1 194.0 L627.6 194.0 L637.2 194.0 L646.7 194.0 L656.2 194.0 L665.8 194.0 L675.3 194.0 L684.8 190.4 L694.4 194.0 L703.9 194.0 L713.4 194.0 L723.0 194.0 L732.5 194.0 L742.0 194.0 L751.6 194.0 L761.1 194.0 L770.7 194.0 L780.2 194.0 L789.7 194.0 L799.3 194.0 L808.8 194.0 L818.3 194.0 L827.9 194.0 L837.4 194.0 L846.9 194.0 L856.5 190.4 L866.0 194.0 L866.0 194 L46.0 194 Z" fill="url(#gdsyjgamefun-ytd1)"/><path d="M46.0 194.0 L55.5 194.0 L65.1 194.0 L74.6 194.0 L84.1 194.0 L93.7 194.0 L103.2 194.0 L112.7 194.0 L122.3 194.0 L131.8 194.0 L141.3 194.0 L150.9 194.0 L160.4 194.0 L170.0 194.0 L179.5 194.0 L189.0 194.0 L198.6 194.0 L208.1 194.0 L217.6 194.0 L227.2 194.0 L236.7 194.0 L246.2 194.0 L255.8 194.0 L265.3 190.4 L274.8 194.0 L284.4 194.0 L293.9 194.0 L303.4 194.0 L313.0 194.0 L322.5 194.0 L332.0 194.0 L341.6 194.0 L351.1 194.0 L360.7 194.0 L370.2 194.0 L379.7 194.0 L389.3 194.0 L398.8 194.0 L408.3 194.0 L417.9 194.0 L427.4 194.0 L436.9 194.0 L446.5 194.0 L456.0 194.0 L465.5 194.0 L475.1 194.0 L484.6 194.0 L494.1 194.0 L503.7 194.0 L513.2 194.0 L522.7 194.0 L532.3 194.0 L541.8 190.4 L551.3 194.0 L560.9 194.0 L570.4 194.0 L580.0 194.0 L589.5 194.0 L599.0 194.0 L608.6 194.0 L618.1 194.0 L627.6 194.0 L637.2 194.0 L646.7 194.0 L656.2 194.0 L665.8 194.0 L675.3 194.0 L684.8 190.4 L694.4 194.0 L703.9 194.0 L713.4 194.0 L723.0 194.0 L732.5 194.0 L742.0 194.0 L751.6 194.0 L761.1 194.0 L770.7 194.0 L780.2 194.0 L789.7 194.0 L799.3 194.0 L808.8 194.0 L818.3 194.0 L827.9 194.0 L837.4 194.0 L846.9 194.0 L856.5 190.4 L866.0 194.0" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round"/><circle cx="866.0" cy="194.0" r="3.4" fill="#fff" stroke="#0e9f6e" stroke-width="2.2"/><text x="46.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/13</text><text x="189.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">08/28</text><text x="332.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/12</text><text x="475.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">09/27</text><text x="618.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/12</text><text x="761.1" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">10/27</text><text x="866.0" y="212" text-anchor="middle" font-size="10" fill="#9aa5b1">11/07</text></svg>
     <div style="text-align:right;margin-top:2px"><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
       <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#f59e0b"></i>曝光量</span><span style="display:inline-flex;align-items:center;gap:6px;margin-left:16px;font-size:12.5px;color:#697386">
       <i style="display:inline-block;width:14px;height:3px;border-radius:2px;background:#0e9f6e"></i>点击量</span></div></div><div style="font-weight:600;font-size:13.5px;margin:14px 0 2px">带来曝光最多的搜索关键词</div>
       <table><tr><th style="width:8%">#</th><th>关键词</th><th style="text-align:right;width:16%">曝光</th><th style="text-align:right;width:14%">点击</th><th style="text-align:right;width:16%">平均排名</th></tr><tr>
           <td style="color:#8792a2;font-size:12.5px">1</td>
-          <td style="font-size:13px">2d claw</td>
+          <td style="font-size:13px">double claw machine</td>
+          <td style="text-align:right;font-size:13px">6</td>
           <td style="text-align:right;font-size:13px">1</td>
-          <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">47.0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">51.5</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">2</td>
-          <td style="font-size:13px">double play claw machine</td>
-          <td style="text-align:right;font-size:13px">4</td>
+          <td style="font-size:13px">2 claw</td>
+          <td style="text-align:right;font-size:13px">2</td>
           <td style="text-align:right;font-size:13px">0</td>
-          <td style="text-align:right;font-size:13px;color:#697386">52.0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">50.5</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">3</td>
+          <td style="font-size:13px">2d claw</td>
+          <td style="text-align:right;font-size:13px">2</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">51.5</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">4</td>
+          <td style="font-size:13px">doble claw</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">97.0</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">5</td>
+          <td style="font-size:13px">double claw machine china</td>
+          <td style="text-align:right;font-size:13px">5</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">55.6</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">6</td>
+          <td style="font-size:13px">double claw machine factory</td>
+          <td style="text-align:right;font-size:13px">5</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">53.8</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">7</td>
+          <td style="font-size:13px">double claw machine supplier</td>
+          <td style="text-align:right;font-size:13px">1</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">74.0</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">8</td>
+          <td style="font-size:13px">double play claw machine</td>
+          <td style="text-align:right;font-size:13px">21</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">49.8</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">9</td>
+          <td style="font-size:13px">double play claw machine china</td>
+          <td style="text-align:right;font-size:13px">8</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">36.8</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">10</td>
+          <td style="font-size:13px">double play claw machine exporter</td>
+          <td style="text-align:right;font-size:13px">2</td>
+          <td style="text-align:right;font-size:13px">0</td>
+          <td style="text-align:right;font-size:13px;color:#697386">61.5</td>
         </tr></table>
       <div style="font-weight:600;font-size:13.5px;margin:16px 0 2px">被访问最多的页面</div>
       <table><tr><th style="width:8%">#</th><th>页面路径</th><th style="text-align:right;width:16%">浏览量</th><th style="text-align:right;width:14%">访客</th></tr><tr>
           <td style="color:#8792a2;font-size:12.5px">1</td>
           <td style="font-size:13px;word-break:break-all">/</td>
-          <td style="text-align:right;font-size:13px">167</td>
-          <td style="text-align:right;font-size:13px;color:#697386">107</td>
+          <td style="text-align:right;font-size:13px">254</td>
+          <td style="text-align:right;font-size:13px;color:#697386">181</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">2</td>
           <td style="font-size:13px;word-break:break-all">/products/</td>
-          <td style="text-align:right;font-size:13px">20</td>
-          <td style="text-align:right;font-size:13px;color:#697386">8</td>
+          <td style="text-align:right;font-size:13px">29</td>
+          <td style="text-align:right;font-size:13px;color:#697386">11</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">3</td>
+          <td style="font-size:13px;word-break:break-all">/about-us/</td>
+          <td style="text-align:right;font-size:13px">13</td>
+          <td style="text-align:right;font-size:13px;color:#697386">6</td>
+        </tr><tr>
+          <td style="color:#8792a2;font-size:12.5px">4</td>
           <td style="font-size:13px;word-break:break-all">/contact-us/</td>
           <td style="text-align:right;font-size:13px">12</td>
           <td style="text-align:right;font-size:13px;color:#697386">5</td>
         </tr><tr>
-          <td style="color:#8792a2;font-size:12.5px">4</td>
-          <td style="font-size:13px;word-break:break-all">/about-us/</td>
-          <td style="text-align:right;font-size:13px">10</td>
-          <td style="text-align:right;font-size:13px;color:#697386">4</td>
-        </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">5</td>
-          <td style="font-size:13px;word-break:break-all">/cart/</td>
-          <td style="text-align:right;font-size:13px">6</td>
-          <td style="text-align:right;font-size:13px;color:#697386">4</td>
+          <td style="font-size:13px;word-break:break-all">/blog/</td>
+          <td style="text-align:right;font-size:13px">8</td>
+          <td style="text-align:right;font-size:13px;color:#697386">7</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">6</td>
-          <td style="font-size:13px;word-break:break-all">/blog/</td>
-          <td style="text-align:right;font-size:13px">5</td>
-          <td style="text-align:right;font-size:13px;color:#697386">4</td>
+          <td style="font-size:13px;word-break:break-all">/cart/</td>
+          <td style="text-align:right;font-size:13px">8</td>
+          <td style="text-align:right;font-size:13px;color:#697386">6</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">7</td>
           <td style="font-size:13px;word-break:break-all">/product/commercial-double-player-claw-catcher-two-claws-coin-operated-crane-game-prize-ofo-claw-machine-for-arcade-center-2/</td>
-          <td style="text-align:right;font-size:13px">4</td>
-          <td style="text-align:right;font-size:13px;color:#697386">4</td>
+          <td style="text-align:right;font-size:13px">7</td>
+          <td style="text-align:right;font-size:13px;color:#697386">7</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">8</td>
-          <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center-复制/</td>
-          <td style="text-align:right;font-size:13px">4</td>
-          <td style="text-align:right;font-size:13px;color:#697386">4</td>
+          <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center/</td>
+          <td style="text-align:right;font-size:13px">7</td>
+          <td style="text-align:right;font-size:13px;color:#697386">3</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">9</td>
-          <td style="font-size:13px;word-break:break-all">/blog/page/2/</td>
-          <td style="text-align:right;font-size:13px">3</td>
+          <td style="font-size:13px;word-break:break-all">/product/factory-hot-sale-two-station-claw-machine-with-dual-claws-coin-operated-commercial-prize-catcher-for-game-center/</td>
+          <td style="text-align:right;font-size:13px">4</td>
           <td style="text-align:right;font-size:13px;color:#697386">2</td>
         </tr><tr>
           <td style="color:#8792a2;font-size:12.5px">10</td>
-          <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center/</td>
-          <td style="text-align:right;font-size:13px">3</td>
-          <td style="text-align:right;font-size:13px;color:#697386">2</td>
-        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>115</strong> 位独立访客、<strong>133</strong> 次会话、<strong>242</strong> 次页面浏览，日均访客约 3.8 人。人均会话数为 1.16，平均会话时长 2 分 3 秒，参与会话 33 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 111 次会话、占比 83%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>53</strong> 次曝光、<strong>1</strong> 次点击，点击率 1.9%，平均排名第 34.1 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。平均排名仍在 20 位之后，说明关键词已进入索引但竞争力不足，属于典型的长尾积累期，随着同类主题文章增多，排名会逐步前移。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（167 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div></section><section><h2>五、内容营销与发布明细</h2><p>本月内容运营延续既定策略：内容引擎从预设的选题角度池中轮换取题，结合产品、场景、客群等变量组合生成原创英文文章，并自动完成「选图 → 压缩 → 上传 → 发布」全流程。这一机制保证了更新频率的确定性——不依赖人工排期，也不受节假日影响，是站点长期 SEO 资产积累的核心动作。</p><table><tr><td style="width:14%;font-weight:bold">日期</td><td style="font-weight:bold">文章标题（点击可查看）</td><td style="font-weight:bold">内容角度</td></tr>
-    <tr>
-      <td style="white-space:nowrap">2026-11-02</td>
-      <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
-      <td>japanese-style</td>
-    </tr>
-    <tr>
-      <td style="white-space:nowrap">2026-11-03</td>
-      <td><a href="https://yjgamefun.com/why-venue-operators-trust-two-claw-machines-2/" target="_blank">Why Venue Operators Trust Two Claw Machines</a></td>
-      <td>quality-first</td>
-    </tr>
-    <tr>
-      <td style="white-space:nowrap">2026-11-04</td>
-      <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine-2/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
-      <td>japanese-style</td>
-    </tr>
-    <tr>
-      <td style="white-space:nowrap">2026-11-05</td>
-      <td><a href="https://yjgamefun.com/what-venue-operators-say-about-two-claw-machines/" target="_blank">What Venue Operators Say About Two Claw Machines</a></td>
-      <td>operator-feedback</td>
-    </tr>
-    <tr>
-      <td style="white-space:nowrap">2026-11-06</td>
-      <td><a href="https://yjgamefun.com/what-to-look-for-in-a-claw-machine-manufacturer/" target="_blank">What to Look for in a Claw Machine Manufacturer</a></td>
-      <td>supplier-trust</td>
-    </tr>
-    <tr>
-      <td style="white-space:nowrap">2026-11-09</td>
-      <td><a href="https://yjgamefun.com/good-feedback-from-venue-operators-why-they-keep-choosing-two-claw-2/" target="_blank">Good Feedback from Venue Operators: Why They Keep Choosing Two Claw</a></td>
-      <td>operator-feedback</td>
-    </tr></table><p>内容价值说明：每篇文章均围绕真实的商业搜索意图撰写（如场地方案、机型对比、供应商选择），并在文中自然衔接产品信息与联系入口。这类内容在获得收录与排名后，能够持续带来精准的 B2B 询盘流量，其价值随发文量呈累积增长，而非一次性消耗。</p></section><section><h2>六、运营诊断与优化建议</h2><p><strong>◆ 发文量爬坡中</strong><br>本月发文 6 篇，尚未达到每日一篇的满负荷节奏。系统于 2026 年 11 月上线，首月属正常爬坡期。<br><strong>建议措施：</strong>持续观察下月数据；若仍不达预期，将核查自动化任务的中断日志。</p></section><section><h2>七、下月工作计划</h2>
+          <td style="font-size:13px;word-break:break-all">/product/hot-selling-one-player-ofo-claw-catcher-machine-coin-operated-three-prong-crane-game-machine-toy-cathcer-for-arcade-center-复制/</td>
+          <td style="text-align:right;font-size:13px">4</td>
+          <td style="text-align:right;font-size:13px;color:#697386">4</td>
+        </tr></table><p><strong>流量规模：</strong>本期站点共获得 <strong>192</strong> 位独立访客、<strong>217</strong> 次会话、<strong>365</strong> 次页面浏览，日均访客约 0.6 人。人均会话数为 1.13，平均会话时长 1 分 37 秒，参与会话 51 次——这组数字刻画的不只是"来了多少人"，更是"来了之后看了多久、看了几页"。对于 B2B 出口站点而言，访客数量本身不是终点，会话深度才是询盘的前置信号：当平均会话时长与人均浏览页数同步抬升时，通常意味着到访者从"随便看看"转向"在比对产品与方案"。<p><strong>渠道结构：</strong>本期第一大流量来源为「直接访问」，贡献 179 次会话、占比 82%。直接访问占比偏高，说明现有流量更多来自已知品牌、邮件签名、名片二维码或已收藏的链接，属于「确定性流量」，转化意愿通常较强，但对新增市场的破圈帮助有限。渠道结构比总量更能说明问题：单一渠道占比超过 70% 时，任何一次算法或投放波动都会被放大到整站数据上；理想的 B2B 出口站结构，是自然搜索打底、直接访问承接老客、社媒与推荐带来增量。<p><strong>搜索表现：</strong>本期在 Google 搜索结果中共获得 <strong>325</strong> 次曝光、<strong>4</strong> 次点击，点击率 1.2%，平均排名第 41.7 位。曝光量代表"有多少次机会被看见"，点击量代表"有多少人愿意进来"，两者之间的落差正是标题与描述优化的空间。平均排名仍在 20 位之后，说明关键词已进入索引但竞争力不足，属于典型的长尾积累期，随着同类主题文章增多，排名会逐步前移。</p><p><strong>内容承接：</strong>本期浏览最多的页面为 <code style="background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12.5px">/</code>（254 次浏览）。落地页榜单是检验内容选题是否"打在需求上"的最直接证据——如果榜单被首页与产品页占据、而本月新发文章未进榜，说明文章尚在收录与爬坡期；若某篇文章持续上榜，则应围绕该主题继续做系列化深挖，并在文中强化询盘入口。</div></section><section><h2>五、内容营销与发布明细</h2><p>本月内容运营延续既定策略：内容引擎从预设的选题角度池中轮换取题，结合产品、场景、客群等变量组合生成原创英文文章，并自动完成「选图 → 压缩 → 上传 → 发布」全流程。这一机制保证了更新频率的确定性——不依赖人工排期，也不受节假日影响，是站点长期 SEO 资产积累的核心动作。</p>
+      <div class="ga-tabs">
+        <button type="button" class="gtab active" onclick="pubTab(this,'yjgamefun',0)">月度</button>
+        <button type="button" class="gtab" onclick="pubTab(this,'yjgamefun',1)">季度</button>
+        <button type="button" class="gtab" onclick="pubTab(this,'yjgamefun',2)">年度</button>
+      </div>
+      <div class="ga-pane" id="pubw-yjgamefun-0" style="display:block">
+        <div style="font-weight:600;font-size:13.5px;margin:4px 0 4px">本月发布明细（6 篇）</div>
+        <table><tr><td style="width:14%;font-weight:bold">日期</td><td style="font-weight:bold">文章标题（点击可查看）</td><td style="font-weight:bold">内容角度</td></tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-09</td>
+        <td><a href="https://yjgamefun.com/good-feedback-from-venue-operators-why-they-keep-choosing-two-claw-2/" target="_blank">Good Feedback from Venue Operators: Why They Keep Choosing Two Claw</a></td>
+        <td>operator-feedback</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-06</td>
+        <td><a href="https://yjgamefun.com/what-to-look-for-in-a-claw-machine-manufacturer/" target="_blank">What to Look for in a Claw Machine Manufacturer</a></td>
+        <td>supplier-trust</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-05</td>
+        <td><a href="https://yjgamefun.com/what-venue-operators-say-about-two-claw-machines/" target="_blank">What Venue Operators Say About Two Claw Machines</a></td>
+        <td>operator-feedback</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-04</td>
+        <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine-2/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
+        <td>japanese-style</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-03</td>
+        <td><a href="https://yjgamefun.com/why-venue-operators-trust-two-claw-machines-2/" target="_blank">Why Venue Operators Trust Two Claw Machines</a></td>
+        <td>quality-first</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-02</td>
+        <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
+        <td>japanese-style</td>
+      </tr></table>
+      </div>
+      <div class="ga-pane" id="pubw-yjgamefun-1" style="display:none">
+        <p>本季度（2026 年 Q4）累计发布 <strong>6 篇</strong>，按月份分组展示如下：</p>
+        <div style="font-weight:600;font-size:13.5px;margin:14px 0 4px">2026 年 11 月（6 篇）</div><table><tr><td style="width:14%;font-weight:bold">日期</td><td style="font-weight:bold">文章标题（点击可查看）</td><td style="font-weight:bold">内容角度</td></tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-09</td>
+        <td><a href="https://yjgamefun.com/good-feedback-from-venue-operators-why-they-keep-choosing-two-claw-2/" target="_blank">Good Feedback from Venue Operators: Why They Keep Choosing Two Claw</a></td>
+        <td>operator-feedback</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-06</td>
+        <td><a href="https://yjgamefun.com/what-to-look-for-in-a-claw-machine-manufacturer/" target="_blank">What to Look for in a Claw Machine Manufacturer</a></td>
+        <td>supplier-trust</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-05</td>
+        <td><a href="https://yjgamefun.com/what-venue-operators-say-about-two-claw-machines/" target="_blank">What Venue Operators Say About Two Claw Machines</a></td>
+        <td>operator-feedback</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-04</td>
+        <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine-2/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
+        <td>japanese-style</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-03</td>
+        <td><a href="https://yjgamefun.com/why-venue-operators-trust-two-claw-machines-2/" target="_blank">Why Venue Operators Trust Two Claw Machines</a></td>
+        <td>quality-first</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-02</td>
+        <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
+        <td>japanese-style</td>
+      </tr></table>
+      </div>
+      <div class="ga-pane" id="pubw-yjgamefun-2" style="display:none">
+        <p>2026 年度累计发布 <strong>6 篇</strong>，按月份分组展示如下：</p>
+        <div style="font-weight:600;font-size:13.5px;margin:14px 0 4px">2026 年 11 月（6 篇）</div><table><tr><td style="width:14%;font-weight:bold">日期</td><td style="font-weight:bold">文章标题（点击可查看）</td><td style="font-weight:bold">内容角度</td></tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-09</td>
+        <td><a href="https://yjgamefun.com/good-feedback-from-venue-operators-why-they-keep-choosing-two-claw-2/" target="_blank">Good Feedback from Venue Operators: Why They Keep Choosing Two Claw</a></td>
+        <td>operator-feedback</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-06</td>
+        <td><a href="https://yjgamefun.com/what-to-look-for-in-a-claw-machine-manufacturer/" target="_blank">What to Look for in a Claw Machine Manufacturer</a></td>
+        <td>supplier-trust</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-05</td>
+        <td><a href="https://yjgamefun.com/what-venue-operators-say-about-two-claw-machines/" target="_blank">What Venue Operators Say About Two Claw Machines</a></td>
+        <td>operator-feedback</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-04</td>
+        <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine-2/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
+        <td>japanese-style</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-03</td>
+        <td><a href="https://yjgamefun.com/why-venue-operators-trust-two-claw-machines-2/" target="_blank">Why Venue Operators Trust Two Claw Machines</a></td>
+        <td>quality-first</td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap">2026-11-02</td>
+        <td><a href="https://yjgamefun.com/the-viral-look-behind-the-two-claw-gift-machine/" target="_blank">The Viral Look Behind the Two-Claw Gift Machine</a></td>
+        <td>japanese-style</td>
+      </tr></table>
+      </div><p>内容价值说明：每篇文章均围绕真实的商业搜索意图撰写（如场地方案、机型对比、供应商选择），并在文中自然衔接产品信息与联系入口。这类内容在获得收录与排名后，能够持续带来精准的 B2B 询盘流量，其价值随发文量呈累积增长，而非一次性消耗。</p></section><section><h2>六、运营诊断与优化建议</h2><p><strong>◆ 服务器响应偏慢</strong><br>本次完整链路响应 9706 ms，超过 3 秒的体验阈值。可能因素：主机资源不足、未启用页面缓存、或跨境访问链路较长。<br><strong>建议措施：</strong>建议确认主机缓存插件已启用、检查主机 CPU/内存占用；如持续偏慢，可评估升级配置或增加 CDN 加速。</p><p><strong>◆ 发文量爬坡中</strong><br>本月发文 6 篇，尚未达到每日一篇的满负荷节奏。系统于 2026 年 11 月上线，首月属正常爬坡期。<br><strong>建议措施：</strong>持续观察下月数据；若仍不达预期，将核查自动化任务的中断日志。</p></section><section><h2>七、下月工作计划</h2>
     <p>结合本月数据与既定运营目标，下月将围绕以下四个方向推进：</p>
     <table>
       <tr><td style="width:6%;font-weight:bold">1</td><td><strong>内容持续迭代</strong>——保持每日一篇的发布节奏，根据文章角度的覆盖情况补充新选题，确保产品线各主要机型与服务场景均有内容触达。</td></tr>
