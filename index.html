@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>运营月报 · 2026年11月</title><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:#f6f8fb; color:#1a2b4a; line-height:1.6; }
+.wrap { max-width:960px; margin:0 auto; padding:32px 20px 60px; }
+.hero { background:linear-gradient(135deg,#0a2540 0%,#1a4a7a 100%); border-radius:16px; color:#fff; padding:40px 36px; margin-bottom:24px; }
+.hero h1 { font-size:26px; font-weight:600; letter-spacing:.5px; }
+.hero .sub { color:#9fb8d8; margin-top:6px; font-size:14px; }
+.hero .badge { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:99px; padding:2px 14px; font-size:13px; margin-bottom:14px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-bottom:24px; }
+.card { background:#fff; border-radius:12px; padding:20px 22px; box-shadow:0 1px 3px rgba(16,42,83,.08); }
+.card .label { font-size:13px; color:#697386; }
+.card .value { font-size:30px; font-weight:700; margin-top:4px; }
+.card .value small { font-size:14px; font-weight:400; color:#697386; }
+.card .hint { font-size:12px; color:#8792a2; margin-top:2px; }
+.green { color:#0e9f6e; } .orange { color:#d97706; } .red { color:#e02424; }
+section { background:#fff; border-radius:12px; padding:26px 28px; box-shadow:0 1px 3px rgba(16,42,83,.08); margin-bottom:20px; }
+section h2 { font-size:17px; font-weight:600; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+section h2::before { content:""; width:4px; height:18px; background:#3b82f6; border-radius:2px; display:inline-block; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th { text-align:left; color:#697386; font-weight:500; padding:8px 10px; border-bottom:2px solid #e3e8ef; }
+td { padding:9px 10px; border-bottom:1px solid #edf0f4; vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+a { color:#3b82f6; text-decoration:none; }
+.note { background:#fffbeb; border:1px solid #fde68a; color:#92400e; border-radius:8px; padding:12px 16px; font-size:13px; }
+ul.dash { list-style:none; }
+ul.dash li { padding:6px 0 6px 22px; position:relative; font-size:14px; }
+ul.dash li::before { content:"•"; position:absolute; left:6px; color:#3b82f6; }
+.pill { display:inline-block; border-radius:99px; padding:1px 10px; font-size:12px; font-weight:500; }
+.pill.ok { background:#def7ec; color:#046c4e; }
+.pill.bad { background:#fde8e8; color:#c81e1e; }
+.pill.warn { background:#fdf6b2; color:#8e4b10; }
+footer { text-align:center; color:#9aa5b1; font-size:12px; margin-top:30px; }
+.ga-tabs { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 16px; }
+.gtab { border:1px solid #d5dbe5; background:#fff; color:#3b5378; border-radius:99px; padding:6px 18px; font-size:13.5px; cursor:pointer; font-family:inherit; transition:all .12s; }
+.gtab:hover { border-color:#3b82f6; color:#3b82f6; }
+.gtab.active { background:#0a2540; border-color:#0a2540; color:#fff; }
+.ga-pane { animation:gafade .18s ease; }
+@keyframes gafade { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
+.kv th { width:112px; color:#5b7191; font-weight:500; background:#f8fafc; border-bottom:1px solid #edf0f4; vertical-align:top; font-size:13px; }
+.kv td { border-bottom:1px solid #edf0f4; font-size:13.5px; }
+.chap { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+.chapnum { font-size:12px; font-weight:700; color:#1a56db; background:#e8f0fe; border-radius:6px; padding:3px 9px; letter-spacing:.5px; white-space:nowrap; }
+.plat-head { display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; }
+.plogo { width:38px; height:38px; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:12px; flex:0 0 auto; letter-spacing:.3px; }
+.monitor { font-size:12.8px; color:#697386; margin-top:3px; }
+td.r { text-align:right; white-space:nowrap; }
+.tc { text-align:center; }
+.cnt-wrap { margin:14px 0 4px; }
+.cnt-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px; font-size:13px; margin-bottom:8px; }
+.cnt-head > strong { font-size:13.5px; }
+.cnt-head > span { color:#8792a2; font-size:12.5px; }
+.cnt-sum { margin-left:auto; color:#0a2540 !important; font-weight:600; background:#f1f5f9; border-radius:6px; padding:2px 9px; }
+.cnt-list { display:flex; flex-wrap:wrap; gap:6px; }
+table.exec td { font-size:13.2px; line-height:1.65; }
+table.exec th { font-size:12.5px; }
+.issue { border-left:3px solid #f59e0b; background:#fffdf7; border-radius:0 9px 9px 0; padding:14px 18px; margin:14px 0 0; }
+.issue-h { display:flex; align-items:baseline; gap:10px; margin-bottom:7px; }
+.issue-h .num { font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#b45309; font-weight:700; }
+.issue-h strong { font-size:14.5px; color:#7c2d12; }
+.issue p { font-size:13.8px; color:#4a3b2a; margin:0; line-height:1.75; }
+.planitem { border-left:3px solid #3b82f6; background:#f8fbff; border-radius:0 9px 9px 0; padding:14px 18px; margin:14px 0 0; }
+.plan-h { display:flex; align-items:baseline; gap:10px; margin-bottom:7px; }
+.plan-h .pnum { font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#1d4ed8; font-weight:700; }
+.plan-h strong { font-size:14.5px; color:#0a2540; }
+.planitem p { font-size:13.8px; color:#334155; margin:0; line-height:1.75; }
+.summary-box { background:#f8fafc; border:1px solid #e3e8ef; border-radius:10px; padding:18px 22px; }
+.summary-box h4 { font-size:13.5px; font-weight:600; color:#0a2540; margin:12px 0 6px; }
+.summary-box h4:first-child { margin-top:0; }
+.summary-box p { font-size:13.8px; color:#3d4d63; margin:0 0 4px; line-height:1.78; }
+@media (max-width:600px){ .kv th { width:86px; } .cnt-sum { margin-left:0; } .chapnum { padding:2px 7px; font-size:11px; } }
+@media (max-width:600px){ .hero{padding:28px 22px} .hero h1{font-size:21px} section{padding:20px 18px} td,th{padding:7px 6px} td a{word-break:break-all} }
+</style></head><body>
+<div class="wrap">
+  <div class="hero">
+    <span class="badge">2026年11月</span>
+    <h1>站点运营月报总览</h1>
+    <div class="sub">共 4 个站点 · 生成于 2026/11/9 10:30:16</div>
+  </div>
+  <section>
+    <h2>站点列表</h2>
+    <table>
+      <tr><th>站点</th><th style="text-align:center">本月发文</th><th style="text-align:center">访客(近90天)</th><th style="text-align:center">搜索曝光(近90天)</th><th style="text-align:center">站点状态</th><th style="text-align:center">移动端性能</th><th></th></tr>
+      
+    <tr>
+      <td><strong>Two Claw 两爪机</strong><div style="color:#8792a2;font-size:12px">https://yjgamefun.com</div></td>
+      <td style="text-align:center;font-weight:700">6</td>
+      <td style="text-align:center">192</td>
+      <td style="text-align:center">323</td>
+      <td style="text-align:center"><span class="pill ok">正常</span></td>
+      <td style="text-align:center" class="">—</td>
+      <td style="text-align:right;white-space:nowrap"><a href="yjgamefun/index.html">查看报告 →</a></td>
+    </tr>
+    <tr>
+      <td><strong>和禧潮 HexiChao</strong><div style="color:#8792a2;font-size:12px">https://hexicplay.com</div></td>
+      <td style="text-align:center;font-weight:700">6</td>
+      <td style="text-align:center">382</td>
+      <td style="text-align:center">154</td>
+      <td style="text-align:center"><span class="pill ok">正常</span></td>
+      <td style="text-align:center" class="">—</td>
+      <td style="text-align:right;white-space:nowrap"><a href="hexicplay/index.html">查看报告 →</a></td>
+    </tr>
+    <tr>
+      <td><strong>宜尔商 Yes-Cranes BABYBEAR</strong><div style="color:#8792a2;font-size:12px">https://www.yes-cranes.com</div></td>
+      <td style="text-align:center;font-weight:700">2</td>
+      <td style="text-align:center">23</td>
+      <td style="text-align:center">38</td>
+      <td style="text-align:center"><span class="pill ok">正常</span></td>
+      <td style="text-align:center" class="">—</td>
+      <td style="text-align:right;white-space:nowrap"><a href="yescranes/index.html">查看报告 →</a></td>
+    </tr>
+    <tr>
+      <td><strong>汇聚 Gathering Art 广告装饰</strong><div style="color:#8792a2;font-size:12px">https://jieruidecor.com</div></td>
+      <td style="text-align:center;font-weight:700">6</td>
+      <td style="text-align:center">28</td>
+      <td style="text-align:center">0</td>
+      <td style="text-align:center"><span class="pill ok">正常</span></td>
+      <td style="text-align:center" class="">—</td>
+      <td style="text-align:right;white-space:nowrap"><a href="jierui/index.html">查看报告 →</a></td>
+    </tr>
+    </table>
+  </section>
+  <section>
+    <h2>社媒列表</h2>
+    <table>
+      <tr><th>站点</th><th style="text-align:center">平台 / 账号</th><th style="text-align:center">主页浏览(近28天)</th><th style="text-align:center">互动(近28天)</th><th style="text-align:center">在发内容</th><th></th></tr>
+      <tr>
+      <td><strong>Two Claw 两爪机</strong><div style="color:#8792a2;font-size:12px">https://yjgamefun.com</div></td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:right;white-space:nowrap"><span style="color:#9aa5b1;font-size:12px">待接入</span></td>
+    </tr><tr>
+      <td><strong>和禧潮 HexiChao</strong><div style="color:#8792a2;font-size:12px">https://hexicplay.com</div></td>
+      <td style="text-align:center">4 个平台 / 5 个账号</td>
+      <td style="text-align:center">28,380</td>
+      <td style="text-align:center">706</td>
+      <td style="text-align:center">68</td>
+      <td style="text-align:right;white-space:nowrap"><a href="hexicplay/social.html">查看报告 →</a></td>
+    </tr><tr>
+      <td><strong>宜尔商 Yes-Cranes BABYBEAR</strong><div style="color:#8792a2;font-size:12px">https://www.yes-cranes.com</div></td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:right;white-space:nowrap"><span style="color:#9aa5b1;font-size:12px">待接入</span></td>
+    </tr><tr>
+      <td><strong>汇聚 Gathering Art 广告装饰</strong><div style="color:#8792a2;font-size:12px">https://jieruidecor.com</div></td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:right;white-space:nowrap"><span style="color:#9aa5b1;font-size:12px">待接入</span></td>
+    </tr>
+    </table>
+    <p style="color:#8792a2;font-size:12px;margin-top:10px">社媒数据当前来自各平台后台截图（每月更新一次），后续接入平台官方 API 后将改为每日自动采集。</p>
+  </section>
+  <footer>本报告由自动化运营系统生成</footer>
+</div></body></html>
